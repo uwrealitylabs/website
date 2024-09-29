@@ -7,7 +7,8 @@ module.exports = {
   ],
   theme: {
     borderWidth : {
-      '1': '1px'
+      '1': '1px',
+      '2' : '2px'
     },
     extend: {
       padding: {
@@ -15,10 +16,15 @@ module.exports = {
       },
       width:{
         990 : "62rem",
-        830 : "52rem"
+        830 : "52rem",
+        325: "20rem",
+        395: "24.7rem",
+        495 : "31rem"
       },
       height : {
-        830 : "52rem"
+        830 : "52rem",
+        370 : "23rem",
+        425 : "27rem"
       },
       colors: {
         background: "var(--background)",
@@ -51,6 +57,7 @@ module.exports = {
         h2: '2.25rem',
         h3: '1.875rem',
         h4: '1.5rem',
+        subheading : '1.2rem',
         body: '1rem',
         bodyLarge: '1.25rem',
         button: '1.125rem'

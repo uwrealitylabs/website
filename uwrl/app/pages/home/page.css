@@ -11,7 +11,7 @@
     margin: 48px 128px;
     overflow: hidden;
     position: relative; 
-    border: solid 1px #2A231E;
+    /* border: solid 1px #2A231E; */
 }
 
 .hero-img{
