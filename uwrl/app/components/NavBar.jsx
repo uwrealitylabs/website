@@ -15,7 +15,7 @@ export default function NavBar() {
           <a href="/pages/projects">Projects</a>
       <a href="/pages/about">About</a>
       <a href="/pages/contact">Contact</a>
-      <ButtonDark text="Join the Team" target="https://discord.gg/vs9XdfuMJu" className="" />
+      <ButtonDark text="Join the Team" target="https://discord.gg/vs9XdfuMJu" blank="yes" className="" />
       </div>
     
     </nav>
