@@ -14,7 +14,11 @@ module.exports = {
         4.5 : '1.125rem'
       },
       width:{
-        990 : "62rem"
+        990 : "62rem",
+        830 : "52rem"
+      },
+      height : {
+        830 : "52rem"
       },
       colors: {
         background: "var(--background)",
@@ -30,7 +34,8 @@ module.exports = {
           darkBody : '#2A231E',
           darkSub : '#3D3733',
           lightBody : "#FFFCF3",
-          lightSub : "#C9BFB7"
+          lightSub : "#C9BFB7",
+          copyright : "#747474"
         },
         bck : {
           white : '#FFFCF3',
