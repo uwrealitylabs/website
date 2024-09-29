@@ -66,6 +66,9 @@ module.exports = {
         suse: 'var(--font-suse)',
         neraphic: 'var(--font-neraphic)'
       },
+      letterSpacing : {
+        logo : '-0.0625rem'
+      }
   
     },
   },
