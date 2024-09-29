@@ -1,20 +1,25 @@
 
 .hero{
     background-image: url('/images/assets/grid.png');
+   
 
 }
 
 .hero-main{
-    height: 850px;
-    margin: 128px;
+    height: 700px;
+    width: 1630px;
+    margin: 48px 128px;
     overflow: hidden;
+    position: relative; 
+    border: solid 1px #2A231E;
 }
 
 .hero-img{
-    width: 2285px;
+    object-fit:contain;
+    width: auto;
+    height: 100%;
     height: auto;
     margin-top: auto;
-    object-fit:fill;
 
     
 }

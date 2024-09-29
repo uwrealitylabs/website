@@ -6,6 +6,9 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    borderWidth : {
+      '1': '1px'
+    },
     extend: {
       padding: {
         4.5 : '1.125rem'
@@ -33,8 +36,10 @@ module.exports = {
           white : '#FFFCF3',
           grey : '#2A231E',
           card : '#322C27'
-        }
-
+        },
+        grey : {
+          60 : '#928987'
+        },
       },
       fontSize: {
         h1: '3rem',
