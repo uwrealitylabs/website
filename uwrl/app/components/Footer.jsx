@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-screen h-830 bg-cover bg-no-repeat bg-bottom bg-[url('/images/assets/city-footer.png')] bg-bck-grey flex">
+    <footer className="w-full h-830 bg-cover bg-no-repeat bg-bottom bg-[url('/images/assets/city-footer.png')] bg-bck-grey flex">
      
       <div className="flex gap-32 mt-48 ml-48">
     

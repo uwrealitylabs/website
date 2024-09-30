@@ -2,7 +2,7 @@ import ButtonDark from "./ButtonDark";
 
 export default function NavBar() {
   return (
-    <nav className="w-screen bg-bck-white h-20 flex justify-between items-center px-8 border-solid border-grey-60 border-1">
+    <nav className="w-full bg-bck-white h-20 flex justify-between items-center px-8 border-solid border-grey-60 border-1">
         <a href="/pages/home" className="flex items-center gap-3">
           <img
             src="/images/assets/uwrl-logo-main.png"

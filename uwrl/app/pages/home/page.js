@@ -3,6 +3,7 @@ import ButtonDark from "@/app/components/ButtonDark";
 import NavBar from "@/app/components/NavBar";
 import Footer from "@/app/components/Footer";
 import Card from "./card";
+import ButtonSecondary from "@/app/components/ButtonSecondary";
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
             VR/AR/XR - Spatial Computing
           </span>
           <div className="flex flex-col gap-6 items-center mb-36">
-            <h1 className="font-neraphic text-h1 w-990 text-center">
+            <h1 className="font-neraphic text-h1 max-w-990 text-center px-24">
               The University of Waterloo's XR and spatial computing design team.
             </h1>
             <ButtonDark
@@ -48,13 +49,21 @@ export default function Home() {
         <div className="flex flex-wrap justify-center items-center gap-12">
           <Card
             heading="Reality From Scratch"
-            body={["Building a custom ", <b key='2'>VR headset</b>, " from scratch"]}
+            body={[
+              "Building a custom ",
+              <b key="2">VR headset</b>,
+              " from scratch",
+            ]}
             link=""
             image=""
           />
           <Card
             heading="Northstar"
-            body={["Building a working ", <b key='1'>AR headset</b>, " from scratch"]}
+            body={[
+              "Building a working ",
+              <b key="1">AR headset</b>,
+              " from scratch",
+            ]}
             link=""
             image=""
           />
@@ -79,7 +88,7 @@ export default function Home() {
         </div>
 
         <a
-        href="/pages/projects"
+          href="/pages/projects"
           className="
            w-fit
            button
@@ -92,32 +101,57 @@ export default function Home() {
       </section>
 
       {/* --------------- ABOUT SECTION -------------------- */}
-      <section className=" bg-[url('/images/assets/grid.png')] bg-bck-white flex justify-between items-center px-64 py-28">
-        <div className="max-w-360">
-          <span className="font-bold text-body bg-[url('/images/assets/paper-tape.png')] bg-contain bg-no-repeat bg-center p-5">
-            About Us
-          </span>
-          <h2 className="font-neraphic text-h2 mt-4 mb-8 leading-tight">
-            We venture into the rift between dimensions.
-          </h2>
-          <p className="font-suse text-body leading-normal">
-            <b className="block">Researching, experimenting, and building.</b>
-            <span className="block">
-              We create real-life interfaces for the virtual world.
+      <section className=" bg-[url('/images/assets/grid.png')] bg-bck-white">
+        <div className=" flex justify-between items-center  px-64 py-28">
+          <div className="max-w-360">
+            <span className="font-bold text-body bg-[url('/images/assets/paper-tape.png')] bg-contain bg-no-repeat bg-center p-5">
+              About Us
             </span>
-          </p>
-          <p className="font-suse text-body my-6 leading-normal">
-            UW Reality Labs is the <b>first design team in Canada</b> that offers
-            students hands-on experience with consumer VR (virtual reality) and
-            AR (augmented reality) technologies.
-          </p>
-          
-          <a className="bg-grey-40 text-text-lightBody button-styling">
-            Dive Deeper
-            <img src="/images/icons/arrow-down-white.png" alt="whyyyy" className="w-6"/>
-          </a>
+            <h2 className="font-neraphic text-h2 mt-4 mb-8 leading-tight">
+              We venture into the rift between dimensions.
+            </h2>
+            <p className="font-suse text-body leading-normal">
+              <b className="block">Researching, experimenting, and building.</b>
+              <span className="block">
+                We create real-life interfaces for the virtual world.
+              </span>
+            </p>
+            <p className="font-suse text-body my-6 leading-normal">
+              UW Reality Labs is the <b>first design team in Canada</b> that
+              offers students hands-on experience with consumer VR (virtual
+              reality) and AR (augmented reality) technologies.
+            </p>
+
+            <a className="bg-grey-40 text-text-lightBody button-styling">
+              Dive Deeper
+              <img
+                src="/images/icons/arrow-down-white.png"
+                alt="whyyyy"
+                className="w-6"
+              />
+            </a>
+          </div>
+          <img src="/images/assets/uwrl-logo-main.png" className="w-390" />
         </div>
-        <img src="/images/assets/uwrl-logo-main.png" className="w-390" />
+
+        {/* SPONSORSHIP SECTION */}
+        <section className="py-24 block mx-44 ">
+          <div className="bg-bck-grey px-8 py-6 rounded-2xl flex justify-between">
+            <h2 className="text-h2 font-neraphic text-text-lightBody max-w-990 ">
+              Interested in supporting our research?
+              <span className="text-text-lightSub">
+               {` View our sponsorship benefits.`}
+              </span>
+            </h2>
+            <ButtonSecondary
+              text="SPONSOR PACKAGE"
+              border="-bck-white"
+              target="yes"
+              link="/documents/Waterloo-Reality-Labs-Sponsor-Package-2024.pdf"
+              icon="/images/icons/arrow-right-white.png"
+            />
+          </div>
+        </section>
       </section>
 
       <Footer />

@@ -20,8 +20,6 @@ html {
   align-items: center;
   gap: 0.625rem;
   width: fit-content;
+  height: fit-content;
 }
 
-.h2{
-  line-height: 200%;
-}
