@@ -11,10 +11,10 @@ export default function Footer() {
         </h1>
         <a
           href="notionfuckassbitch"
-          className="bg-bck-white  pt-4.5 pb-4 pl-6 pr-5 w-fit font-neraphic text-button rounded-md flex items-center"
+          className="bg-bck-white  button-styling"
         >
           Join the team
-          <img src="/images/icons/arrow-right.png" alt="" className="ml-3 mb-1 inline" />
+          <img src="/images/icons/arrow-right.png" alt="" />
         </a>
     <div>
 

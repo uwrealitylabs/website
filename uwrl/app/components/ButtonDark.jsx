@@ -1,10 +1,12 @@
 
-export default function ButtonDark({text, target, icon="", blank="no"}){
+export default function ButtonDark({text, link, icon="", target="no", border=""}){
     return(
-        <a href={target} target={blank === "yes" ? "_blank" : "_self"}
-        className="bg-bck-grey pt-4.5 pb-4 pl-6 pr-5 w-fit font-neraphic font-normal text-button text-text-lightBody rounded-md flex items-center">
+        <a href={link} target={target === "yes" ? "_blank" : "_self"}
+        className={`bg-bck-grey  text-text-lightBody button-styling
+              ${border ? "border-solid border-bck-white border-2" : ""}
+        `}>
             {text}
-            {icon && <img src={icon} className="w-4 ml-3 mb-1 inline"/>}
+            {icon && <img src={icon} className="w-4 mb-1"/>}
         </a>
     )
 }
