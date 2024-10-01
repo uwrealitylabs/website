@@ -2,6 +2,14 @@
 // to call this -> blank = "yes" if want to bring to other page
 // border="-bck-white"  bg="bck-grey"
 "use client";
+
+export const metadata = {
+  name: "viewport",
+  content: "width=device-width, initial-scale=1.0",
+};
+
+
+
 export default function ButtonSecondary({
   text,
   link,
@@ -21,6 +29,7 @@ export default function ButtonSecondary({
       button-styling 
       border-${border} border-solid border-1  
       hover:scale-99 duration-500  
+      max-tablet:text-body
       `}
       onMouseOver={(e) => {
         const img = e.currentTarget.querySelector("img");

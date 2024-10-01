@@ -11,10 +11,6 @@
 html, body {
   font-size: 16px;
   width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
 }
 
 .button-styling {
@@ -28,5 +24,10 @@ html, body {
   width: fit-content;
   height: fit-content;
   white-space: nowrap;
+}
+@media (min-width: 520px) and (max-width: 1020px) {
+  .button-styling{
+    font-size: 1rem;
+  }
 }
 

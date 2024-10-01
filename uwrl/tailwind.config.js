@@ -16,10 +16,13 @@ module.exports = {
       },
       spacing: {
         360: "35rem",
+        390: "24.3rem",
         1360: "85rem",
         990: "75rem",
         900: "56rem",
         830: "52rem",
+        280: "17.5rem",
+
       },
       padding: {
         4.5: "1.125rem",
@@ -28,6 +31,7 @@ module.exports = {
         990: "62rem",
         830: "52rem",
         325: "20rem",
+        280: "17.5rem",
         390: "24.3rem",
         495: "31rem",
       },

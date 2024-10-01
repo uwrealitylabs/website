@@ -1,3 +1,8 @@
+export const metadata = {
+  name: "viewport",
+  content: "width=device-width, initial-scale=1.0",
+};
+
 import "./page.css";
 import ButtonDark from "@/app/components/ButtonDark";
 import NavBar from "@/app/components/NavBar";
@@ -25,7 +30,7 @@ export default function Home() {
         border-solid border-bck-grey border-1
         "
         >
-          <span className="font-suse font-bold text-body">
+          <span className="font-suse font-bold text-body leading-normal">
             VR/AR/XR - Spatial Computing
           </span>
           <div className="flex flex-col gap-6 items-center mb-36">
@@ -42,7 +47,12 @@ export default function Home() {
       </main>
 
       {/* --------------- PROJECTS SECTION -------------------- */}
-      <section className="bg-bck-grey bg-[url('/images/assets/grid-dark.png'),_url('/images/assets/proj-vectors.png')] bg-no-repeat bg-center bg-cover text-text-lightBody flex flex-col items-center justify-center px-24">
+      <section
+        className="bg-bck-grey bg-[url('/images/assets/grid-dark.png'),_url('/images/assets/proj-vectors.png')] bg-no-repeat bg-center bg-cover 
+      text-text-lightBody 
+      flex flex-col items-center justify-center px-24
+      "
+      >
         <h2 className="font-neraphic text-h2 py-24">Our Projects</h2>
 
         {/* CARDS */}
@@ -94,62 +104,107 @@ export default function Home() {
            button
            border-solid border-bck-white border-2
            bg-bck-grey
-           rounded-lg font-bold font-suse text-body px-6 py-4 mb-24 mt-12"
+           rounded-lg font-bold font-suse text-body leading-normal px-6 py-4 mb-24 mt-12"
         >
           View All Projects
         </a>
       </section>
 
       {/* --------------- ABOUT SECTION -------------------- */}
-      <section className=" bg-[url('/images/assets/grid.png')] bg-bck-white">
-        <div className=" flex justify-between items-center  px-64 py-28">
-          <div className="max-w-360">
-            <span className="font-bold text-body bg-[url('/images/assets/paper-tape.png')] bg-contain bg-no-repeat bg-center p-5">
+      <section
+        className=" bg-[url('/images/assets/grid.png')] bg-bck-white
+      "
+      >
+        {/* --MAIN ABOUT CONTENT --*/}
+        <div
+          className="px-64 py-28
+          grid grid-cols-2 gap-x-24
+
+        ---1536---
+        max-2xl:px-40
+
+        ---1024px---
+        max-lg:px-32 max-lg:gap-x-14
+
+        ---768px---
+        max-md:px-12 max-md:gap-x-12
+
+        "
+        >
+          {/* TEXT SECTION */}
+          <div className="max-w-lg min-lg:min-w-72">
+            <span className="font-bold text-body leading-normal bg-[url('/images/assets/paper-tape.png')] bg-contain bg-no-repeat bg-center p-5">
               About Us
             </span>
-            <h2 className="font-neraphic text-h2 mt-4 mb-8 leading-tight">
-              We venture into the rift between dimensions.
-            </h2>
-            <p className="font-suse text-body leading-normal">
-              <b className="block">Researching, experimenting, and building.</b>
-              <span className="block">
-                We create real-life interfaces for the virtual world.
-              </span>
-            </p>
-            <p className="font-suse text-body my-6 leading-normal">
-              UW Reality Labs is the <b>first design team in Canada</b> that
-              offers students hands-on experience with consumer VR (virtual
-              reality) and AR (augmented reality) technologies.
-            </p>
+            <div className="flex flex-col gap-4">
+              <>
+                <h2
+                  className="font-neraphic text-h2 mt-6 leading-tight
+            ---1024px---
+            max-lg:text-h3
+            "
+                >
+                  We venture into the rift between dimensions.
+                </h2>
+              </>
 
-            <a className="bg-grey-40 text-text-lightBody button-styling">
-              Dive Deeper
-              <img
-                src="/images/icons/arrow-down-white.png"
-                alt="whyyyy"
-                className="w-6"
+              <>
+                <p className="font-suse text-body leading-normal">
+                  <b className="block">
+                    Researching, experimenting, and building.
+                  </b>
+                  <span className="block">
+                    We create real-life interfaces for the virtual world.
+                  </span>
+                </p>
+                <p className="font-suse text-body leading-normal">
+                  UW Reality Labs is the <b>first design team in Canada</b> that
+                  offers students hands-on experience with consumer VR (virtual
+                  reality) and AR (augmented reality) technologies.
+                </p>
+              </>
+              <ButtonDark
+                text="About us"
+                icon="/images/icons/arrow-right-white.png"
+                link="/pages/about"
               />
-            </a>
+            </div>
           </div>
-          <img src="/images/assets/uwrl-logo-main.png" className="w-390" />
+          {/* LOGO */}
+          <img
+            src="/images/assets/uwrl-logo-main.png"
+            className=" ml-auto max-w-xs w-full 
+          "
+          />
         </div>
 
         {/* SPONSORSHIP SECTION */}
-        <section className="py-24 block mx-44 ">
-          <div className="bg-bck-grey px-8 py-6 rounded-2xl flex justify-between">
-            <h2 className="text-h2 font-neraphic text-text-lightBody max-w-900 pr-6">
-              Interested in supporting our research?
-              <span className="text-text-lightSub">
-               {` View our sponsorship benefits.`}
-              </span>
-            </h2>
-            <ButtonSecondary
-              text="SPONSOR PACKAGE"
+        <section
+          className="pb-24 mx-44 grid grid-cols-2
+        ---1536px---
+        max-2xl:mx-20
+
+        ---768px---
+        max-md:mx-12
+        "
+        >
+          <h2 className="text-h2 font-neraphic text-text-darkBody max-w-900 
+
+          ---1024px---
+          max-lg:text-h3
+          ">
+            Interested in supporting our research?
+            <span className="text-grey-60">
+              {` View our sponsorship benefits.`}
+            </span>
+          </h2>
+          <div className="ml-auto">
+            <ButtonDark
+              text="Sponsor package"
               border="-bck-white"
               target="yes"
               link="/documents/Waterloo-Reality-Labs-Sponsor-Package-2024.pdf"
               icon="/images/icons/arrow-right-white.png"
-              animateIcon="/images/icons/arrow-down-white.png"
             />
           </div>
         </section>
