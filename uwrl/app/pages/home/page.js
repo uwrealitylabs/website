@@ -120,6 +120,7 @@ export default function Home() {
           className="px-64 py-28
           grid grid-cols-2 gap-x-24
 
+
         ---1536---
         max-2xl:px-40
 
@@ -129,10 +130,21 @@ export default function Home() {
         ---768px---
         max-md:px-12 max-md:gap-x-12
 
+        ---520px---
+        max-mobile:gap-y-12 max-mobile:px-6
+
         "
         >
           {/* TEXT SECTION */}
-          <div className="max-w-lg min-lg:min-w-72">
+          <div className="max-w-lg 
+          ---1024px---
+          min-lg:min-w-72
+
+          ---520px---
+          max-mobile:col-span-2
+          
+          
+          ">
             <span className="font-bold text-body leading-normal bg-[url('/images/assets/paper-tape.png')] bg-contain bg-no-repeat bg-center p-5">
               About Us
             </span>
@@ -142,6 +154,9 @@ export default function Home() {
                   className="font-neraphic text-h2 mt-6 leading-tight
             ---1024px---
             max-lg:text-h3
+
+            --520px---
+            max-mobile:text-h4
             "
                 >
                   We venture into the rift between dimensions.
@@ -174,6 +189,8 @@ export default function Home() {
           <img
             src="/images/assets/uwrl-logo-main.png"
             className=" ml-auto max-w-xs w-full 
+            ---520px---
+            max-mobile:row-start-2 max-mobile:row-span-2 max-mobile:col-span-2 max-mobile:mx-auto 
           "
           />
         </div>
@@ -186,19 +203,28 @@ export default function Home() {
 
         ---768px---
         max-md:mx-12
+
+        ---520px---
+        max-mobile:gap-y-6
         "
         >
           <h2 className="text-h2 font-neraphic text-text-darkBody max-w-900 
 
           ---1024px---
           max-lg:text-h3
+
+          ---520px---
+          max-mobile:text-button max-mobile:leading-snug max-mobile:col-span-2  
           ">
             Interested in supporting our research?
             <span className="text-grey-60">
               {` View our sponsorship benefits.`}
             </span>
           </h2>
-          <div className="ml-auto">
+          <div className="ml-auto
+          ---520px---
+          max-mobile:col-span-2 max-mobile:mx-0
+          ">
             <ButtonDark
               text="Sponsor package"
               border="-bck-white"
