@@ -137,7 +137,7 @@ export default function Home() {
         {/* SPONSORSHIP SECTION */}
         <section className="py-24 block mx-44 ">
           <div className="bg-bck-grey px-8 py-6 rounded-2xl flex justify-between">
-            <h2 className="text-h2 font-neraphic text-text-lightBody max-w-990 ">
+            <h2 className="text-h2 font-neraphic text-text-lightBody max-w-900 pr-6">
               Interested in supporting our research?
               <span className="text-text-lightSub">
                {` View our sponsorship benefits.`}
@@ -149,6 +149,7 @@ export default function Home() {
               target="yes"
               link="/documents/Waterloo-Reality-Labs-Sponsor-Package-2024.pdf"
               icon="/images/icons/arrow-right-white.png"
+              animateIcon="/images/icons/arrow-down-white.png"
             />
           </div>
         </section>

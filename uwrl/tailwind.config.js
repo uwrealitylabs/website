@@ -11,11 +11,15 @@ module.exports = {
       2: "2px",
     },
     extend: {
+      screens: {
+        mobile: "520px",
+      },
       spacing: {
         360: "35rem",
         1360: "85rem",
         990: "75rem",
-
+        900: "56rem",
+        830: "52rem",
       },
       padding: {
         4.5: "1.125rem",
@@ -57,6 +61,7 @@ module.exports = {
         grey: {
           60: "#928987",
           40: "#544F4A",
+          90: "#443D37",
         },
       },
       fontSize: {
@@ -75,6 +80,9 @@ module.exports = {
       },
       letterSpacing: {
         logo: "-0.0625rem",
+      },
+      scale: {
+        99: "99%",
       },
     },
   },

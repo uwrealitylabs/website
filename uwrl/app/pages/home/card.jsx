@@ -2,11 +2,15 @@ export default function Card({ heading, body, image, link }) {
   return (
     <section className="bg-bck-grey rounded-xl h-495 w-425
       border-solid border-bck-white border-1
+      hover:scale-105 duration-500
     ">
       <a href={link}>
         <div className="flex flex-col justify-center items-center px-3 pt-3 gap-5">
           {/* IMAGE HERE WITH BCK -define height --cards will stay same size, flex will change */}
-          <div className="h-370 w-390 bg-bck-card ">
+          <div className="h-370 w-390 bg-bck-card 
+          hover:bg-grey-90 duration-500
+          
+          ">
             <img src={image} alt="" className="" />
           </div>
 
