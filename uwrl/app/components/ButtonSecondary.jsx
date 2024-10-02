@@ -14,10 +14,10 @@ export default function ButtonSecondary({
   text,
   link,
   icon = "",
-  animateIcon,
+  animateIcon="",
   target = "no",
   border = "",
-  bg,
+  bg
 }) {
   const img = icon;
   return (
@@ -25,11 +25,13 @@ export default function ButtonSecondary({
       href={link}
       target={target === "yes" ? "_blank" : "_self"}
       className={`
-      bg-${bg}  text-text-lightBody 
+      bg-${bg}  color-${border}
       button-styling 
       border-${border} border-solid border-1  
-      hover:scale-99 duration-500  
+      hover:scale-97 duration-500  
       `}
+
+
       onMouseOver={(e) => {
         const img = e.currentTarget.querySelector("img");
         if (img && animateIcon) img.src = animateIcon;
@@ -38,6 +40,8 @@ export default function ButtonSecondary({
         const img = e.currentTarget.querySelector("img");
         if (img && icon) img.src = icon;
       }}
+
+
     >
       {text}
       {icon && <img src={img} className="w-4 mb-1" />}

@@ -22,6 +22,7 @@ module.exports = {
         900: "56rem",
         830: "52rem",
         280: "17.5rem",
+        640: "40rem"
       },
       padding: {
         4.5: "1.125rem",
@@ -40,6 +41,7 @@ module.exports = {
         830: "52rem",
         370: "23rem",
         425: "27rem",
+        700: "43.75rem"
       },
       colors: {
         background: "var(--background)",
@@ -87,8 +89,17 @@ module.exports = {
         logo: "-0.0625rem",
       },
       scale: {
-        99: "99%",
+        97: "97%",
+        102:"102%"
       },
+      aspectRatio: {
+        '4/3': '4 / 3',
+        '16/7': '16 / 7',
+        '1/1.7' : '1 / 2'
+      },
+      gridTemplateColumns : {
+        'two' : 'repeat(2, (2fr, 1fr));'
+      }
     },
   },
   plugins: [],
