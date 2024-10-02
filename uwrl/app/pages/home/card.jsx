@@ -1,15 +1,31 @@
+export const metadata = {
+  name: "viewport",
+  content: "width=device-width, initial-scale=1.0",
+};
+
 export default function Card({ heading, body, image, link }) {
   return (
     <section className="bg-bck-grey rounded-xl h-495 w-425
       border-solid border-bck-white border-1
+      ---1024px---
+      max-lg:w-340
+
+      ---520px---
+      max-mobile:scale-[.95]
       hover:scale-105 duration-500
+
+
+
     ">
       <a href={link}>
         <div className="flex flex-col justify-center items-center px-3 pt-3 gap-5">
           {/* IMAGE HERE WITH BCK -define height --cards will stay same size, flex will change */}
           <div className="h-370 w-390 bg-bck-card 
+          ---1024px---
+          max-lg:w-310
+          transition-colors
           hover:bg-grey-90 duration-500
-          
+
           ">
             <img src={image} alt="" className="" />
           </div>

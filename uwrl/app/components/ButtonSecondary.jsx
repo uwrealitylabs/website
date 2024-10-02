@@ -29,7 +29,6 @@ export default function ButtonSecondary({
       button-styling 
       border-${border} border-solid border-1  
       hover:scale-99 duration-500  
-      max-tablet:text-body
       `}
       onMouseOver={(e) => {
         const img = e.currentTarget.querySelector("img");

@@ -22,7 +22,6 @@ module.exports = {
         900: "56rem",
         830: "52rem",
         280: "17.5rem",
-
       },
       padding: {
         4.5: "1.125rem",
@@ -34,6 +33,8 @@ module.exports = {
         280: "17.5rem",
         390: "24.3rem",
         495: "31rem",
+        340: "21.25rem",
+        310: "19.4rem",
       },
       height: {
         830: "52rem",

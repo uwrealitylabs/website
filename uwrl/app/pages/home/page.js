@@ -30,11 +30,18 @@ export default function Home() {
         border-solid border-bck-grey border-1
         "
         >
-          <span className="font-suse font-bold text-body leading-normal">
+          <span className="font-suse font-bold text-body leading-normal
+          ---520px---
+          max-mobile:text-sm
+          ">
             VR/AR/XR - Spatial Computing
           </span>
           <div className="flex flex-col gap-6 items-center mb-36">
-            <h1 className="font-neraphic text-h1 max-w-990 text-center px-24">
+            <h1 className="font-neraphic text-h1 max-w-990 wrap text-center px-24
+            ---520px---
+            max-mobile:text-h4
+            
+            ">
               The University of Waterloo's XR and spatial computing design team.
             </h1>
             <ButtonDark
@@ -50,13 +57,27 @@ export default function Home() {
       <section
         className="bg-bck-grey bg-[url('/images/assets/grid-dark.png'),_url('/images/assets/proj-vectors.png')] bg-no-repeat bg-center bg-cover 
       text-text-lightBody 
-      flex flex-col items-center justify-center px-24
+      flex flex-col items-center justify-center px-18
+    
+      ---1024px---
+      max-lg:px-6
+
+      
       "
       >
-        <h2 className="font-neraphic text-h2 py-24">Our Projects</h2>
+        <h2 className="font-neraphic text-h2 py-24
+        ---768px--- 
+        max-md:text-h3
+
+        
+        
+        ">Our Projects</h2>
 
         {/* CARDS */}
-        <div className="flex flex-wrap justify-center items-center gap-12">
+        <div className="flex flex-wrap justify-center items-center gap-12
+        max-lg:gap-6
+        max-mobile:gap-2
+        ">
           <Card
             heading="Reality From Scratch"
             body={[
