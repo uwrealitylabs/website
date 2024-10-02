@@ -28,16 +28,32 @@ export default function Home() {
         rounded-2xl
         flex justify-center items-center flex-col gap-7
         border-solid border-bck-grey border-1
+        my-12 mx-32
+
+        ---1024px---
+        max-lg:mx-20
+
+        ---768px--- 
+        max-md:mx-6
+
+        ---3 --- 
+        max-mobile:mx-2 max-mobile:my-6 max-mobile:h-96
         "
         >
           <span className="font-suse font-bold text-body leading-normal
           ---520px---
-          max-mobile:text-sm
+          max-md:text-sm
           ">
             VR/AR/XR - Spatial Computing
           </span>
           <div className="flex flex-col gap-6 items-center mb-36">
             <h1 className="font-neraphic text-h1 max-w-990 wrap text-center px-24
+            ---1024px---
+            max-lg:px-12
+
+            ---768[x--- 
+            max-md:text-h2
+            
             ---520px---
             max-mobile:text-h4
             
@@ -57,8 +73,10 @@ export default function Home() {
       <section
         className="bg-bck-grey bg-[url('/images/assets/grid-dark.png'),_url('/images/assets/proj-vectors.png')] bg-no-repeat bg-center bg-cover 
       text-text-lightBody 
-      flex flex-col items-center justify-center px-18
-    
+      flex flex-col items-center justify-center px-20
+   
+
+
       ---1024px---
       max-lg:px-6
 
