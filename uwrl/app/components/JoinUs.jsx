@@ -8,7 +8,7 @@ import ButtonSecondary from "./ButtonSecondary";
 export default function JoinUs() {
   return (
     <div
-      className="grid grid-flow-col grid-cols-two py-36
+      className="grid grid-flow-col grid-cols-two py-32
     ---768px---
     max-md:grid-flow-row max-md:gap-y-12 max-md:py-24
     "

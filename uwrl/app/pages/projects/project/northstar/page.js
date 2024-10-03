@@ -7,7 +7,7 @@ export default function Northstar() {
   return (
     <div className="bg-[url('/images/assets/grid.png')] bg-bck-white">
       <NavBar />
-      <main className="px-24 py-6 grid gap-y-16">
+      <main className="px-24 py-6 grid gap-y-16 || max-lg:px-12  || max-mobile:px-4">
         <ProjHeader
           title="Project Northstar"
           img="/images/photos/northstar.png"
