@@ -103,7 +103,7 @@ export default function Home() {
               <b key="2">VR headset</b>,
               " from scratch",
             ]}
-            link=""
+            link="/pages/projects/project/realityfromscratch"
             image=""
           />
           <Card
@@ -113,25 +113,25 @@ export default function Home() {
               <b key="1">AR headset</b>,
               " from scratch",
             ]}
-            link=""
+            link="/pages/projects/project/northstar"
             image=""
           />
           <Card
             heading="Universal Gestures"
             body="Using deep learning to understand hand-tracked movements"
-            link=""
+            link="/pages/projects/project/universalgestures"
             image=""
           />
           <Card
             heading="DeepFocus (Redux)"
             body="Creating natural, eye-like defocus blur in real-time game engines for VR"
-            link=""
+            link="/pages/projects/project/deepfocus"
             image=""
           />
           <Card
             heading="Varifocal"
             body="Bringing adjustable focus to VR headsets"
-            link=""
+            link="/pages/projects/project/varifocalresearch"
             image=""
           />
         </div>
@@ -212,7 +212,7 @@ export default function Home() {
                   </span>
                 </p>
                 <p className="font-suse text-body leading-normal">
-                  UW Reality Labs is the <b>first design team in Canada</b> that
+                  Waterloo Reality Labs is the <b>first design team in Canada</b> that
                   offers students hands-on experience with consumer VR (virtual
                   reality) and AR (augmented reality) technologies.
                 </p>

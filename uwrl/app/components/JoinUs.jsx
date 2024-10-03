@@ -7,15 +7,20 @@ import ButtonSecondary from "./ButtonSecondary";
 
 export default function JoinUs() {
   return (
-    <div className="grid grid-flow-col grid-cols-two py-36
+    <div
+      className="grid grid-flow-col grid-cols-two py-36
     ---768px---
-    max-md:grid-flow-row max-md:gap-y-12
-    ">
+    max-md:grid-flow-row max-md:gap-y-12 max-md:py-24
+    "
+    >
       <h2
         className="text-h2 font-neraphic text-text-darkBody max-w-990 mr-44 
 
         ---1024px---
         max-lg:text-h3 max-lg:mr-24
+
+        ---768px---
+        max-md:m-0
 
         ---520px---
         max-mobile:text-button max-mobile:leading-snug max-mobile:col-span-2  

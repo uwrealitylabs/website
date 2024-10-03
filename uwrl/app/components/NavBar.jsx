@@ -26,7 +26,6 @@ export default function NavBar() {
         <a href="/pages/projects">Projects</a>
         <a href="/pages/about">About</a>
         <a href="/pages/contact">Contact</a>
-        <a href="/pages/sponsors">Sponsors</a>
         <ButtonDark
           text="Join the Team"
           link="https://discord.gg/vs9XdfuMJu"

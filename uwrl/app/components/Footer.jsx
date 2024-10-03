@@ -45,7 +45,8 @@ export default function Footer() {
             Let's build the future together, one reality at a time.
           </h1>
           <a
-            href="notionfuckassbitch"
+            href="https://discord.gg/vs9XdfuMJu"
+            target="_blank"
             className="bg-bck-white  button-styling max-md:hidden"
           >
             Join the team
@@ -66,25 +67,33 @@ export default function Footer() {
           <div className="flex flex-col gap-2">
             <a
               href="/pages/home"
-              className="font-suse text-text-lightBody text-xl"
+              className="font-suse text-text-lightBody text-xl
+              hover:text-text-lightSub duration-300
+              "
             >
               Home
             </a>
             <a
               href="/pages/projects"
-              className="font-suse text-text-lightBody text-xl"
+              className="font-suse text-text-lightBody text-xl              
+              hover:text-text-lightSub duration-300
+              "
             >
               Projects
             </a>
             <a
               href="/pages/about"
-              className="font-suse text-text-lightBody text-xl"
+              className="font-suse text-text-lightBody text-xl              
+              hover:text-text-lightSub duration-300
+              "
             >
               About
             </a>
             <a
               href="/pages/contact"
-              className="font-suse text-text-lightBody text-xl"
+              className="font-suse text-text-lightBody text-xl              
+              hover:text-text-lightSub duration-300
+              "
             >
               Contact
             </a>
@@ -96,7 +105,7 @@ export default function Footer() {
               href="https://discord.gg/vs9XdfuMJu"
               target="_blank"
               className="font-suse text-text-lightSub text-xl underline decoration-text-lightSub flex justify-between items-center w-36
-            max-tablet:text-body
+
             "
             >
               Discord

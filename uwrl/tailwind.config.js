@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -22,7 +23,7 @@ module.exports = {
         900: "56rem",
         830: "52rem",
         280: "17.5rem",
-        640: "40rem"
+        640: "40rem",
       },
       padding: {
         4.5: "1.125rem",
@@ -41,7 +42,7 @@ module.exports = {
         830: "52rem",
         370: "23rem",
         425: "27rem",
-        700: "43.75rem"
+        700: "43.75rem",
       },
       colors: {
         background: "var(--background)",
@@ -90,16 +91,18 @@ module.exports = {
       },
       scale: {
         97: "97%",
-        102:"102%"
+        102: "102%",
       },
       aspectRatio: {
-        '4/3': '4 / 3',
-        '16/7': '16 / 7',
-        '1/1.7' : '1 / 2'
+        "4/3": "4 / 3",
+        "16/7": "16 / 7",
+        "3/2": "3 / 2",
+        "2/1": "2 / 1",
       },
-      gridTemplateColumns : {
-        'two' : 'repeat(2, (2fr, 1fr));'
-      }
+      gridTemplateColumns: {
+        two: "repeat(2, (2fr, 1fr));",
+        projects: "1fr, 1fr, 1fr 4fr",
+      },
     },
   },
   plugins: [],
