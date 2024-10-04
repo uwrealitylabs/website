@@ -24,7 +24,7 @@ export default function ButtonSecondary({
       target={target === "yes" ? "_blank" : "_self"}
       className={`
       bg-${bg}  color-${border}
-      button-styling 
+      button-styling font-neraphic
       border-${border} border-solid border-1  
       hover:scale-97 duration-300  ease-out
 

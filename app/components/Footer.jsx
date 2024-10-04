@@ -47,7 +47,7 @@ export default function Footer() {
           <a
             href="https://discord.gg/vs9XdfuMJu"
             target="_blank"
-            className="bg-bck-white  button-styling max-md:hidden"
+            className="bg-bck-white  button-styling font-neraphic max-md:hidden"
           >
             Join the team
             <img src="/images/icons/arrow-right.png" alt="" />
