@@ -1,7 +1,4 @@
-export const metadata = {
-  name: "viewport",
-  content: "width=device-width, initial-scale=1.0",
-};
+
 
 import NavBar from "@/app/components/NavBar";
 import ProjectCard from "./projectCard";

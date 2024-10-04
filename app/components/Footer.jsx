@@ -1,7 +1,3 @@
-export const metadata = {
-  name: "viewport",
-  content: "width=device-width, initial-scale=1.0",
-};
 
 export default function Footer() {
   return (
@@ -47,7 +43,7 @@ export default function Footer() {
           <a
             href="https://discord.gg/vs9XdfuMJu"
             target="_blank"
-            className="bg-bck-white  button-styling max-md:hidden"
+            className="bg-bck-white font-neraphic button-styling max-md:hidden"
           >
             Join the team
             <img src="/images/icons/arrow-right.png" alt="" />

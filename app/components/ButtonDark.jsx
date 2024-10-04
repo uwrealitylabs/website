@@ -9,7 +9,7 @@ export default function ButtonDark({
     <a
       href={link}
       target={target === "yes" ? "_blank" : "_self"}
-      className={`bg-bck-grey  text-text-lightBody button-styling font-normal
+      className={`bg-bck-grey  text-text-lightBody button-styling font-normal font-neraphic 
               ${border ? "border-solid border-bck-white border-2" : ""}
         `}
     >
