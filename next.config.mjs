@@ -1,7 +1,8 @@
+// Import any necessary packages
+import { defineConfig } from 'next';
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  /* config options here */
-}
- 
-module.exports = nextConfig
+export default defineConfig({
+  // Your Next.js configuration options
+  reactStrictMode: true,
+  // Other configurations...
+});
