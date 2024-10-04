@@ -30,7 +30,7 @@ export default function VarifocalResearch() {
               OpenVR SDK. Then, the VR Compositor output was routed to our VR
               displays, which comes with accompanying lenses and a custom
               3D-printed housing. In addition to the HMD, we are building Vive
-              Wand-style controllers, which we'll show below.
+              Wand-style controllers, which we&apos;ll show below.
             </p>,
 
             <p key="12">

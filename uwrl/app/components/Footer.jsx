@@ -42,7 +42,7 @@ export default function Footer() {
         max-mobile:text-h4 max-mobile:mb-16
         "
           >
-            Let's build the future together, one reality at a time.
+            Let&apos;s build the future together, one reality at a time.
           </h1>
           <a
             href="https://discord.gg/vs9XdfuMJu"

@@ -58,7 +58,7 @@ export default function Home() {
             max-mobile:text-h4
             
             ">
-              The University of Waterloo's XR and spatial computing design team.
+              The University of Waterloo &apos;s XR and spatial computing design team.
             </h1>
             <ButtonDark
               text="Dive Deeper"

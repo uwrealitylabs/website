@@ -91,7 +91,7 @@ export default function About() {
               </h3>
               <p className="font-suse text-bodyLarge leading-normal">
                 Following your proposition of a new project, if and once your
-                project has its first meeting and begins development, you'll
+                project has its first meeting and begins development, you&apos;ll
                 become a Project Lead, with all of the administrative
                 permissions to take control of your project.{" "}
               </p>

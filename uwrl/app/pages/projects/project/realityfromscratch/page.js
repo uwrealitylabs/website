@@ -65,7 +65,7 @@ export default function RealityFromScratch() {
           <br/>
           <p>
             Each controller will have an IMU, a rechargeable battery, RF
-            transceivers, tactile buttons, triggers, and joysticks. The HMD's
+            transceivers, tactile buttons, triggers, and joysticks. The HMD&apos;s
             microcontroller will also be upgraded and moved onto a central PCB.
             We are almost done with soldering.
           </p>
