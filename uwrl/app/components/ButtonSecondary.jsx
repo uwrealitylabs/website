@@ -30,14 +30,14 @@ export default function ButtonSecondary({
 
       max-md:text-body
       `}
-      onMouseOver={(e) => {
-        const img = e.currentTarget.querySelector("img");
-        if (img && animateIcon) img.src = animateIcon;
-      }}
-      onMouseOut={(e) => {
-        const img = e.currentTarget.querySelector("img");
-        if (img && icon) img.src = icon;
-      }}
+      // onMouseOver={(e) => {
+      //   const img = e.currentTarget.querySelector("img");
+      //   if (img && animateIcon) img.src = animateIcon;
+      // }}
+      // onMouseOut={(e) => {
+      //   const img = e.currentTarget.querySelector("img");
+      //   if (img && icon) img.src = icon;
+      // }}
     >
       {text}
       {icon && <img src={img} className="w-4 mb-1" />}
