@@ -2,6 +2,7 @@
 import { useState } from "react";
 
 import ButtonDark from "./ButtonDark";
+import ButtonSecondary from "./ButtonSecondary";
 
 export default function NavBar() {
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
@@ -31,6 +32,7 @@ export default function NavBar() {
       <button onClick={toggleOverlay} className="md:hidden">
       {isOverlayOpen ? "" :<img src="/images/icons/stack.png" className="w-6"/> }
       </button>
+
       {isOverlayOpen && (
         <div className="fixed inset-0 bg-[url('/images/assets/grid-dark.png')] bg-black bg-opacity-95 flex items-center justify-center z-50 md:hidden">
           <div className="text-white grid text-center gap-9 font-neraphic text-button">
