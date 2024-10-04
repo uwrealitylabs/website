@@ -1,4 +1,7 @@
-
+export const metadata = {
+  name: "viewport",
+  content: "width=device-width, initial-scale=1.0",
+};
 
 import "./page.css";
 import ButtonDark from "@/app/components/ButtonDark";

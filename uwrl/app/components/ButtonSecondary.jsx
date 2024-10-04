@@ -3,6 +3,11 @@
 // border="-bck-white"  bg="bck-grey"
 "use client";
 
+export const metadata = {
+  name: "viewport",
+  content: "width=device-width, initial-scale=1.0",
+};
+
 export default function ButtonSecondary({
   text,
   link,
@@ -19,7 +24,7 @@ export default function ButtonSecondary({
       target={target === "yes" ? "_blank" : "_self"}
       className={`
       bg-${bg}  color-${border}
-      button-styling font-neraphic 
+      button-styling 
       border-${border} border-solid border-1  
       hover:scale-97 duration-300  ease-out
 
