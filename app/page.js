@@ -7,7 +7,7 @@ import "./page.css";
 import ButtonDark from "@/app/components/ButtonDark";
 import NavBar from "@/app/components/NavBar";
 import Footer from "@/app/components/Footer";
-import Card from "./(pages)/home/card";
+import Card from "./pages/home/card";
 import ButtonSecondary from "./components/ButtonSecondary";
 
 export default function app() {
