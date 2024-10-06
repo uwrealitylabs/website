@@ -2,8 +2,9 @@ export const metadata = {
   name: "viewport",
   content: "width=device-width, initial-scale=1.0",
 };
+import Image from "next/image";
 
-export default function Card({ heading, body, image, link }) {
+export default function Card({ heading, body, image, link, width, height }) {
   return (
     <section className="bg-bck-grey rounded-xl h-495 w-425
       border-solid border-bck-white border-1
@@ -27,7 +28,10 @@ export default function Card({ heading, body, image, link }) {
           hover:bg-grey-90 duration-500
 
           ">
-            <img src={image} alt="" className="" />
+            <Image src={image} 
+            width={900}
+            height={900}
+            alt="" className="w-380 h-370 object-cover opacity-75 hover:opacity-100 duration-500" />
           </div>
 
           <div className="flex flex-col items-center gap-1 h-28">

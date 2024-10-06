@@ -29,7 +29,7 @@ export default function JoinUs() {
         Interested in starting your own project?
         <span className="text-grey-60">
           {" "}
-          Join us in crafting impactful visual experiences`
+          Join us in crafting impactful visual experiences
         </span>
       </h2>
       <div

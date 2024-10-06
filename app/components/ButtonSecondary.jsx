@@ -40,7 +40,7 @@ export default function ButtonSecondary({
       // }}
     >
       {text}
-      {icon && <img src={img} className="w-4 mb-1" />}
+      {icon && <img src={img} alt="" className="w-4 mb-1" />}
     </a>
   );
 }

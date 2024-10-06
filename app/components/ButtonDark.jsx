@@ -14,7 +14,7 @@ export default function ButtonDark({
         `}
     >
       {text}
-      {icon && <img src={icon} className="w-4 mb-1" />}
+      {icon && <img src={icon} className="w-4 mb-1" alt=""/>}
     </a>
   );
 }

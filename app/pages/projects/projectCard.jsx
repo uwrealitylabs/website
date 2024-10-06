@@ -4,7 +4,7 @@
 export default function ProjectCard({ title, descrip, img, link, grid = "" }) {
   return (
     <a
-      href={link}
+      href={`/pages/projects//${link}`}
       className={`
     hover:scale-102
     duration-300
@@ -34,7 +34,7 @@ export default function ProjectCard({ title, descrip, img, link, grid = "" }) {
             : "aspect-[16/7] max-md:aspect-[13/8]"
         }`}
         >
-          <img src={img} className="w-full h-full object-cover" />
+          <img src={img} className="w-full h-full object-cover" alt=""/>
         </div>
       </div>
     </a>

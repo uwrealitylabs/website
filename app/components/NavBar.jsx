@@ -30,16 +30,16 @@ export default function NavBar() {
         {isOverlayOpen ? (
           ""
         ) : (
-          <img src="/images/icons/stack.png" className="w-6" />
+          <img src="/images/icons/stack.png" alt="nav stack" className="w-6" />
         )}
       </button>
 
       {isOverlayOpen && (
         <div className="fixed inset-0 bg-[url('/images/assets/grid-dark.png')] bg-black bg-opacity-95 flex items-center justify-center z-50 md:hidden">
           <div className="text-white grid text-center gap-9 font-neraphic text-button">
-            <a href="/pages/projects">Projects</a>
-            <a href="/pages/about">About</a>
-            <a href="/pages/contact">Contact</a>
+            <a href="/projects">Projects</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
             <ButtonSecondary
               text="Join the Team"
               link="https://discord.gg/vs9XdfuMJu"

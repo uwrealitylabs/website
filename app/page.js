@@ -2,12 +2,12 @@ export const metadata = {
   name: "viewport",
   content: "width=device-width, initial-scale=1.0",
 };
-
+import Image from "next/image";
 import "./page.css";
 import ButtonDark from "@/app/components/ButtonDark";
 import NavBar from "@/app/components/NavBar";
 import Footer from "@/app/components/Footer";
-import Card from "./pages/home/card";
+import Card from "./(pages)/home/card";
 import ButtonSecondary from "./components/ButtonSecondary";
 
 export default function app() {
@@ -58,7 +58,7 @@ export default function app() {
             max-mobile:text-h4
             
             ">
-              The University of Waterloo &apos;s XR and spatial computing design team.
+              The University of Waterloo&apos;s XR and spatial computing design team.
             </h1>
             <ButtonDark
               text="Dive Deeper"
@@ -99,39 +99,47 @@ export default function app() {
           <Card
             heading="Reality From Scratch"
             body={[
-              "Building a custom ",
-              <b key="2">VR headset</b>,
-              " from scratch",
+              "We're the only colligiate design team in the world to be building headsets from scratch",
             ]}
-            link="/pages/projects/project/realityfromscratch"
-            image=""
+            link="/pages/projects/realityfromscratch"
+            image="/images/photos/realityfromscratch/headset.png"
+            height="920"
+            width="1632"
           />
           <Card
-            heading="Northstar"
+            heading="VITracker"
+            body="Visual inertia cameral module"
+            link="/pages/projects/northstar"
+            image="/images/photos/vitracker/teammeeting.jpg"
+            width="1222"
+            height="851"
+          />
+          <Card
+            heading="North Star"
             body={[
               "Building a working ",
               <b key="1">AR headset</b>,
               " from scratch",
             ]}
             link="/pages/projects/project/northstar"
-            image=""
+            image="/images/photos/northstar/onhead.png"
           />
           <Card
             heading="Universal Gestures"
             body="Using deep learning to understand hand-tracked movements"
-            link="/pages/projects/project/universalgestures"
+            link="/pages/projects/universalgestures"
+            image="/images/photos/universal-gestures.png"
+          />
+          <Card
+            heading="Universal Text"
+            body="Brand new flagship software projects this term!"
+            link="/pages/projects/deepfocus"
             image=""
           />
           <Card
-            heading="DeepFocus (Redux)"
-            body="Creating natural, eye-like defocus blur in real-time game engines for VR"
-            link="/pages/projects/project/deepfocus"
-            image=""
-          />
-          <Card
-            heading="Varifocal"
+            heading="Anima"
             body="Bringing adjustable focus to VR headsets"
-            link="/pages/projects/project/varifocalresearch"
+            link="/pages/projects/varifocalresearch"
             image=""
           />
         </div>
@@ -226,6 +234,7 @@ export default function app() {
           </div>
           {/* LOGO */}
           <img
+          alt=""
             src="/images/assets/uwrl-logo-main.png"
             className=" ml-auto max-w-xs w-full 
             ---520px---
