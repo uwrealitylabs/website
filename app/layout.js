@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${suse.variable} ${neraphic.variable} `}>
       <Head>
-        <link rel="icon" href="/favicon.ico" sizes="any"/>
+        <link rel="icon" href="/favicon.ico"/>
       </Head>
       <body>{children}</body>
     </html>

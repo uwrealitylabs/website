@@ -92,15 +92,14 @@ export default function app() {
         ">Our Projects</h2>
 
         {/* CARDS */}
-        <div className="flex flex-wrap justify-center items-center gap-12
+        <div className="flex flex-wrap justify-center items-center gap-12 lg:mx-12
         max-lg:gap-6
         max-mobile:gap-2
         ">
           <Card
             heading="Reality From Scratch"
             body={[
-              "We're the only colligiate design team in the world to be building headsets from scratch",
-            ]}
+              "Our magnum opus: a ", <b key="">VR headset</b>, " built from open-source principles"            ]}
             link="/pages/projects/realityfromscratch"
             image="/images/photos/realityfromscratch/headset.png"
             height="920"
@@ -108,27 +107,27 @@ export default function app() {
           />
           <Card
             heading="VITracker"
-            body="Visual inertia cameral module"
+            body="Building custom hardware for real-time visual-inertial SLAM tracking"
             link="/pages/projects/northstar"
-            image="/images/photos/vitracker/teammeeting.jpg"
+            image="/images/photos/vitracker/vitracker_v0_s5.png"
             width="1222"
             height="851"
           />
           <Card
             heading="North Star"
             body={[
-              "Building a working ",
+              "An open-source, birdbath optics-based ",
               <b key="1">AR headset</b>,
-              " from scratch",
+              " built from scratch",
             ]}
             link="/pages/projects/project/northstar"
             image="/images/photos/northstar/onhead.png"
           />
           <Card
             heading="Universal Gestures"
-            body="Using deep learning to understand hand-tracked movements"
+            body="Using on-device machine learning to recognize hand gestures on Meta Quest"
             link="/pages/projects/universalgestures"
-            image="/images/photos/universal-gestures.png"
+            image="/images/photos/universalgestures/socratica.jpeg"
           />
           <Card
             heading="Universal Text"
