@@ -28,8 +28,7 @@ export default function app() {
         rounded-2xl
         flex justify-center items-center flex-col gap-7
         border-solid border-bck-grey border-1
-        my-12 mx-32
-
+        my-12 mx-32 
         ---1024px---
         max-lg:mx-20
 
