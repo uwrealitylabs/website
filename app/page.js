@@ -9,11 +9,11 @@ import Footer from "@/app/components/Footer";
 import Card from "./(pages)/home/card";
 import ButtonSecondary from "./components/ButtonSecondary";
 
-export default function app() {
+export default function App() {
 
-  const projects = useRef(null);
+  const Projects = useRef(null);
 
-  const scrollToSection = (ref) => {
+  const ScrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -71,7 +71,7 @@ export default function app() {
               team.
             </h1>
             <button
-              onClick={() => scrollToSection(projects)}
+              onClick={() => ScrollToSection(Projects)}
               className="bg-bck-grey  text-text-lightBody button-styling font-normal font-neraphic">
               Dive Deeper
               <img
@@ -98,7 +98,7 @@ export default function app() {
       
       "
         id="projects"
-        ref={projects}
+        ref={Projects}
       >
         <h2
           className="font-neraphic text-h2 py-24
