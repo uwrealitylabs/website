@@ -22,7 +22,7 @@ export default function About() {
             <img src="/images/assets/squiggle.png" className="absolute -bottom-12 -right-64 max-md:hidden" alt=""/>
             <img src="/images/assets/star.png" className="absolute bottom-20 -right-10 max-md:hidden" alt=""/>
           <p
-            className="font-suse text-body leading-normal bg-[url('/images/assets/paper-tape.png')] 
+            className="font-suse text-body font-bold leading-normal bg-[url('/images/assets/paper-tape.png')] 
           bg-no-repeat bg-contain bg-center w-fit p-6 mx-auto
           "
           >

@@ -4,7 +4,7 @@
 export default function ProjectCard({ title, descrip, img, link, grid = "" }) {
   return (
     <a
-      href={`/pages/projects//${link}`}
+      href={`/projects//${link}`}
       className={`
     hover:scale-102
     duration-300

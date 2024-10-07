@@ -45,7 +45,7 @@ export default function RealityFromScratch() {
           link="https://github.com/uwrealitylabs/realityfromscratch"
         />
 
-        <section className="mobile:grid mobile:grid-cols-2 max-mobile:flex max-mobile:flex-col gap-6 my-16">
+        <section className="mobile:grid mobile:grid-cols-2 mx-auto max-mobile:flex max-mobile:flex-col gap-6 my-16">
           <ContentImages photo="realityfromscratch/headset.png" grid="full" />
           <ContentImages photo="realityfromscratch/groupphoto.png" />
           <ContentImages photo="realityfromscratch/pcb2.png" />
