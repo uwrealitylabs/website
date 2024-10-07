@@ -1,4 +1,8 @@
 
+html{
+    scroll-behavior: smooth;
+}
+
 .hero{
     background-image: url('/images/assets/grid.png');
    

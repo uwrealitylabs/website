@@ -61,7 +61,7 @@ export default function app() {
             </h1>
             <ButtonDark
               text="Dive Deeper"
-              target="#"
+              link="#projects"
               icon="/images/icons/arrow-right-white.png"
             />
           </div>
@@ -81,6 +81,7 @@ export default function app() {
 
       
       "
+      id="projects"
       >
         <h2 className="font-neraphic text-h2 py-24
         ---768px--- 
@@ -91,8 +92,7 @@ export default function app() {
         ">Our Projects</h2>
 
         {/* CARDS */}
-        <div className="flex flex-wrap justify-center items-center gap-12 lg:mx-12
-        max-lg:gap-6
+        <div className="flex flex-wrap justify-center items-center gap-12 max-w-1360 
         max-mobile:gap-2
         ">
           <Card

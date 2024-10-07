@@ -7,7 +7,7 @@ export default function Contact() {
     <div className="bg-bck-white bg-[url('/images/assets/grid.png')]">
       <NavBar />
       <main className="px-24 py-12 || max-md:px-8 || max-mobile:px-4 ">
-        <section className="grid grid-flow-col my-20">
+        <section className="grid grid-flow-col my-20 gap-y-12 || max-md:grid-flow-row">
 
 
           <div className="max-w-550 grid gap-y-4">
@@ -35,7 +35,12 @@ export default function Contact() {
           </div>
 
           {/* FORM */}
-          <div>contact stuff here</div>
+          <form className="border-dashed border-2 border-accents-blue grid grid-flow-row">
+            <input type="text" name="name"  className="bg-bck-white" placeholder="John Doe"/>
+            <input type="email" name="email" placeholder="johndoe@gmail.com"/>
+            <input type="text" name="message" placeholder="Hey There!"/>
+            <button type="submit">Send</button>
+          </form>
 
         </section>
 
