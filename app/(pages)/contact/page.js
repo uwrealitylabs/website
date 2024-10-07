@@ -1,6 +1,7 @@
 import NavBar from "@/app/components/NavBar";
 import Footer from "@/app/components/Footer";
 import ButtonDark from "@/app/components/ButtonDark";
+import Image from "next/image";
 
 export default function Contact() {
   return (
@@ -25,10 +26,42 @@ export default function Contact() {
 
             {/* SOCIAL LINKS */}
             <div className="grid grid-flow-row text-bodyLarge font-suse underline gap-y-2">
-              <a href="">Discord</a>
-              <a href="">Github</a>
-              <a href="">LinkedIn</a>
-              <a href="">Instagram</a>
+              <a href="" className="flex items-center gap-4">
+                <Image
+                  src="/images/icons/discord.png"
+                  width={22}
+                  height={17}
+                  className="object-contain"
+                />
+                Discord
+              </a>
+              <a href="" className="flex items-center gap-4">
+                <Image
+                  src="/images/icons/github.png"
+                  width={20}
+                  height={20}
+                  className="object-contain"
+                />
+                Github
+              </a>
+              <a href="" className="flex items-center gap-4">
+                <Image
+                  src="/images/icons/linkedin.png"
+                  width={20}
+                  height={20}
+                  className="object-contain"
+                />
+                LinkedIn
+              </a>
+              <a href="" className="flex items-center gap-4">
+                <Image
+                  src="/images/icons/instagram.png"
+                  width={20}
+                  height={20}
+                  className="object-contain"
+                />
+                Instagram
+              </a>
             </div>
           </div>
 
