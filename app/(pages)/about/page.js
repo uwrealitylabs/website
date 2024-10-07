@@ -17,7 +17,7 @@ export default function About() {
       ---520px---
       max-mobile:px-4 "
       >
-        <header className="max-w-830 text-center mx-auto grid gap-y-6 mb-16 relative">
+        <header className="max-w-830 text-center mx-auto grid gap-y-6 mb-24 relative">
             <img src="/images/assets/gears.png"className="absolute max-md:hidden" alt=""/>
             <img src="/images/assets/squiggle.png" className="absolute -bottom-12 -right-64 max-md:hidden" alt=""/>
             <img src="/images/assets/star.png" className="absolute bottom-20 -right-10 max-md:hidden" alt=""/>
@@ -42,7 +42,7 @@ export default function About() {
           <div className="grid grid-flow-row row-span-2">
             <img
               src="/images/assets/table-illustration.png"
-              className=" object-cover m-auto p-10 lg:row-start-2 max-md:px-32 max-mobile:px-0 "
+              className=" object-cover m-auto p-10 lg:row-start-2 max-md:px-32 max-mobile:px-0 max-md:hidden max-lg:w-640"
             />
             <section className="p-6 border-dashed border-3 border-accents-yellow rounded-lg h-fit lg:row-start-1 max-lg:my-6">
               <h3 className="font-neraphic text-h4 mb-6">Project Philosophy</h3>
