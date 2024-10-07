@@ -6,6 +6,7 @@
 :root{
   color: #2A231E;
   line-height: 1.3;
+
 }
 
 html, body {
@@ -26,6 +27,10 @@ html, body {
   white-space: nowrap;
 }
 
+::placeholder{
+  color: #BAB3AE;
+  font-family: var(--font-suse);
+}
 @media (min-width: 520px) and (max-width: 1020px) {
   .button-styling{
     font-size: 1rem;

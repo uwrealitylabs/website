@@ -8,8 +8,6 @@ export default function Contact() {
       <NavBar />
       <main className="px-24 py-12 || max-md:px-8 || max-mobile:px-4 ">
         <section className="grid grid-flow-col my-20 gap-y-12 || max-md:grid-flow-row">
-
-
           <div className="max-w-550 grid gap-y-4">
             <div>
               <h2
@@ -35,13 +33,47 @@ export default function Contact() {
           </div>
 
           {/* FORM */}
-          <form className="border-dashed border-2 border-accents-blue grid grid-flow-row">
-            <input type="text" name="name"  className="bg-bck-white" placeholder="John Doe"/>
-            <input type="email" name="email" placeholder="johndoe@gmail.com"/>
-            <input type="text" name="message" placeholder="Hey There!"/>
-            <button type="submit">Send</button>
-          </form>
+          <form className="border-dashed border-2 border-accents-blue grid grid-flow-row gap-y-8 p-6">
+            <div className="flex flex-col gap-4">
+              <p className="font-suse font-bold font-bodyLarge">Full Name</p>
+              <input
+                className="border-b-1 border-bck-grey p-2 bg-bck-white"
+                type="text"
+                name="name"
+                maxLength="50"
+                placeholder="John Doe"
+              />
+            </div>
 
+            <div className="flex flex-col gap-4">
+              <p className="font-suse font-bold font-bodyLarge">Email</p>
+              <input
+                className="border-b-1 border-bck-grey p-2 bg-bck-white"
+                type="email"
+                maxLength="50"
+                name="email"
+                placeholder="johndoe@gmail.com"
+              />
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <p className="font-suse font-bold font-bodyLarge">Message</p>
+              <input
+                className="border-b-1 border-bck-grey pb-24 p-2 bg-bck-white"
+                type="text"
+                maxLength="250"
+                name="message"
+                placeholder="Hey There!"
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="border border-dashed border-2 font-suse border-bck-grey font-bold w-fit h-fit px-16 py-2 rounded-lg ml-auto"
+            >
+              Send
+            </button>
+          </form>
         </section>
 
         {/* SPONSORSHIP SECTION */}
