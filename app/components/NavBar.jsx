@@ -17,7 +17,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="w-full bg-bck-white h-20 flex shrink justify-between items-center px-8 border-solid border-grey-60 border-1">
+    <nav className="w-full bg-bck-white h-20 flex shrink justify-between items-center px-8 border-solid border-grey-60 border-b-1">
       <a href="/" className="flex items-center gap-3">
         <img src="/images/assets/uwrl-logo-main.png" alt="" className="h-14" />
         <h2 className="font-neraphic text-bodyLarge text-text-darkBody tracking-logo || max-lg:hidden max-md:block">

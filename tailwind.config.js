@@ -15,16 +15,20 @@ module.exports = {
     extend: {
       screens: {
         mobile: "520px",
+        biggest: "1920px",
       },
       spacing: {
+        1920: "1920px",
         360: "35rem",
         390: "24.3rem",
         1360: "85rem",
+        1500: "94rem",
         990: "75rem",
         900: "56rem",
         830: "52rem",
         280: "17.5rem",
         640: "40rem",
+        550: "35rem",
       },
       padding: {
         4.5: "1.125rem",

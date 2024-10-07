@@ -7,19 +7,36 @@ export default function Contact() {
     <div className="bg-bck-white bg-[url('/images/assets/grid.png')]">
       <NavBar />
       <main className="px-24 py-12 || max-md:px-8 || max-mobile:px-4 ">
-        <section className="grid grid-flow-col">
-          <div>
-            <h2 className="font-suse text-body font-bold 
-            bg-[url('/images/assets/paper-tape.png')] bg-contain bg-no-repeat bg-center p-6 w-fit">
-              Contact
-            </h2>
-            <h1 className="text-h1 font-neraphic">Want to get involved?</h1>
+        <section className="grid grid-flow-col my-20">
+
+
+          <div className="max-w-550 grid gap-y-4">
+            <div>
+              <h2
+                className="font-suse text-body font-bold 
+            bg-[url('/images/assets/paper-tape.png')] bg-contain bg-no-repeat bg-center p-6 w-fit"
+              >
+                Contact
+              </h2>
+              <h1 className="text-h1 font-neraphic">Want to get involved?</h1>
+            </div>
             <p className="text-bodyLarge font-suse">
               Shoot us a quick message with ideas, questions about starting a
               project, or sponsorships. We are also active on our socials!
             </p>
+
+            {/* SOCIAL LINKS */}
+            <div className="grid grid-flow-row text-bodyLarge font-suse underline gap-y-2">
+              <a href="">Discord</a>
+              <a href="">Github</a>
+              <a href="">LinkedIn</a>
+              <a href="">Instagram</a>
+            </div>
           </div>
+
+          {/* FORM */}
           <div>contact stuff here</div>
+
         </section>
 
         {/* SPONSORSHIP SECTION */}

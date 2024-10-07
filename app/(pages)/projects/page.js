@@ -12,7 +12,7 @@ export default function Projects() {
   return (
     <>
       <NavBar />
-      <main
+      <section
         className="bg-bck-white bg-[url('/images/assets/grid.png')]
       px-24 py-12
       ---768px---
@@ -22,6 +22,7 @@ export default function Projects() {
       max-mobile:px-4 
       "
       >
+        <main>
         <header className="flex justify-between items-end gap-24 mb-12">
           <div className="max-w-640 flex flex-col gap-4">
             <h1 className="font-neraphic text-h2 text-text-darkBody max-md:text-h3">
@@ -104,7 +105,8 @@ export default function Projects() {
           />
         </section>
         <JoinUs/>
-      </main>
+        </main>
+      </section>
       <Footer />
     </>
   );

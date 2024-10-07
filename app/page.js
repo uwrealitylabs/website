@@ -15,7 +15,7 @@ export default function app() {
     <div>
       <NavBar />
       {/* --------------- HERO SECTION -------------------- */}
-      <main
+      <section
         className="hero       
       bg-[url('/images/assets/grid.png')] bg-bck-white 
       flex justify-center items-center"
@@ -66,7 +66,7 @@ export default function app() {
             />
           </div>
         </div>
-      </main>
+      </section>
 
       {/* --------------- PROJECTS SECTION -------------------- */}
       <section
@@ -163,7 +163,7 @@ export default function app() {
         {/* --MAIN ABOUT CONTENT --*/}
         <div
           className="px-64 py-28
-          grid grid-cols-2 gap-x-24
+          grid grid-cols-2 gap-x-24 max-w-1500 mx-auto
 
 
         ---1536---
@@ -243,7 +243,7 @@ export default function app() {
 
         {/* SPONSORSHIP SECTION */}
         <section
-          className="pb-24 mx-44 grid grid-cols-2
+          className="pb-24 grid grid-cols-2 2xl:max-w-1500 mx-auto
         ---1536px---
         max-2xl:mx-20
 
