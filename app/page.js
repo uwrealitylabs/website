@@ -1,7 +1,6 @@
-export const metadata = {
-  name: "viewport",
-  content: "width=device-width, initial-scale=1.0",
-};
+'use client'
+import { useRef } from "react";
+
 import Image from "next/image";
 import "./page.css";
 import ButtonDark from "@/app/components/ButtonDark";
@@ -11,6 +10,13 @@ import Card from "./(pages)/home/card";
 import ButtonSecondary from "./components/ButtonSecondary";
 
 export default function app() {
+
+  const projects = useRef(null);
+
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div>
       <NavBar />
@@ -39,14 +45,17 @@ export default function app() {
         max-mobile:mx-2 max-mobile:my-6 max-mobile:h-96
         "
         >
-          <span className="font-suse font-bold text-body leading-normal
+          <span
+            className="font-suse font-bold text-body leading-normal
           ---520px---
           max-md:text-sm
-          ">
+          "
+          >
             VR/AR/XR - Spatial Computing
           </span>
           <div className="flex flex-col gap-6 items-center mb-36">
-            <h1 className="font-neraphic text-h1 max-w-990 wrap text-center px-24
+            <h1
+              className="font-neraphic text-h1 max-w-990 wrap text-center px-24
             ---1024px---
             max-lg:px-12
 
@@ -56,14 +65,21 @@ export default function app() {
             ---520px---
             max-mobile:text-h4
             
-            ">
-              The University of Waterloo&apos;s XR and spatial computing design team.
+            "
+            >
+              The University of Waterloo&apos;s XR and spatial computing design
+              team.
             </h1>
-            <ButtonDark
-              text="Dive Deeper"
-              link="#projects"
-              icon="/images/icons/arrow-right-white.png"
-            />
+            <button
+              onClick={() => scrollToSection(projects)}
+              className="bg-bck-grey  text-text-lightBody button-styling font-normal font-neraphic">
+              Dive Deeper
+              <img
+                src="images/icons/arrow-down-white.png"
+                className="w-4 mb-1"
+                alt=""
+              />
+            </button>
           </div>
         </div>
       </section>
@@ -81,24 +97,34 @@ export default function app() {
 
       
       "
-      id="projects"
+        id="projects"
+        ref={projects}
       >
-        <h2 className="font-neraphic text-h2 py-24
+        <h2
+          className="font-neraphic text-h2 py-24
         ---768px--- 
         max-md:text-h3
 
         
         
-        ">Our Projects</h2>
+        "
+        >
+          Our Projects
+        </h2>
 
         {/* CARDS */}
-        <div className="flex flex-wrap justify-center items-center gap-12 max-w-1360 
+        <div
+          className="flex flex-wrap justify-center items-center gap-12 max-w-1360 
         max-mobile:gap-2
-        ">
+        "
+        >
           <Card
             heading="Reality From Scratch"
             body={[
-              "Our magnum opus: a ", <b key="">VR headset</b>, " built from open-source principles"            ]}
+              "Our magnum opus: a ",
+              <b key="">VR headset</b>,
+              " built from open-source principles",
+            ]}
             link="/projects/realityfromscratch"
             image="/images/photos/realityfromscratch/headset.png"
             height="920"
@@ -181,7 +207,8 @@ export default function app() {
         "
         >
           {/* TEXT SECTION */}
-          <div className="max-w-lg 
+          <div
+            className="max-w-lg 
           ---1024px---
           min-lg:min-w-72
 
@@ -189,7 +216,8 @@ export default function app() {
           max-mobile:col-span-2
           
           
-          ">
+          "
+          >
             <span className="font-bold text-body leading-normal bg-[url('/images/assets/paper-tape.png')] bg-contain bg-no-repeat bg-center p-5">
               About Us
             </span>
@@ -218,9 +246,10 @@ export default function app() {
                   </span>
                 </p>
                 <p className="font-suse text-body leading-normal">
-                  Waterloo Reality Labs is the <b>first design team in Canada</b> that
-                  offers students hands-on experience with consumer VR (virtual
-                  reality) and AR (augmented reality) technologies.
+                  Waterloo Reality Labs is the{" "}
+                  <b>first design team in Canada</b> that offers students
+                  hands-on experience with consumer VR (virtual reality) and AR
+                  (augmented reality) technologies.
                 </p>
               </>
               <ButtonDark
@@ -232,7 +261,7 @@ export default function app() {
           </div>
           {/* LOGO */}
           <img
-          alt=""
+            alt=""
             src="/images/assets/uwrl-logo-main.png"
             className=" ml-auto max-w-xs w-full 
             ---520px---
@@ -254,23 +283,27 @@ export default function app() {
         max-mobile:gap-y-6
         "
         >
-          <h2 className="text-h2 font-neraphic text-text-darkBody max-w-900 
+          <h2
+            className="text-h2 font-neraphic text-text-darkBody max-w-900 
 
           ---1024px---
           max-lg:text-h3
 
           ---520px---
           max-mobile:text-button max-mobile:leading-snug max-mobile:col-span-2  
-          ">
+          "
+          >
             Interested in supporting our research?
             <span className="text-grey-60">
               {` View our sponsorship benefits.`}
             </span>
           </h2>
-          <div className="ml-auto
+          <div
+            className="ml-auto
           ---520px---
           max-mobile:col-span-2 max-mobile:mx-0
-          ">
+          "
+          >
             <ButtonDark
               text="Sponsor package"
               border="-bck-white"
