@@ -17,7 +17,7 @@ export default function Footer() {
       
       ---1536px---
       max-2xl:mx-24 max-2xl:mt-28
-      max-[1700px]:mx-24
+      max-[1700px]:mr-72
 
       
       ---768px---

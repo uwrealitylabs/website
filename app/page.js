@@ -7,7 +7,7 @@ import "./page.css";
 import ButtonDark from "@/app/components/ButtonDark";
 import NavBar from "@/app/components/NavBar";
 import Footer from "@/app/components/Footer";
-import Card from "./pages/home/card";
+import Card from "./(pages)/home/card";
 import ButtonSecondary from "./components/ButtonSecondary";
 
 export default function app() {
@@ -99,7 +99,7 @@ export default function app() {
             heading="Reality From Scratch"
             body={[
               "Our magnum opus: a ", <b key="">VR headset</b>, " built from open-source principles"            ]}
-            link="/pages/projects/realityfromscratch"
+            link="/projects/realityfromscratch"
             image="/images/photos/realityfromscratch/headset.png"
             height="920"
             width="1632"
@@ -107,8 +107,8 @@ export default function app() {
           <Card
             heading="VITracker"
             body="Building custom hardware for real-time visual-inertial SLAM tracking"
-            link="/pages/projects/northstar"
-            image="/images/photos/vitracker/vitracker_v0_s5.png"
+            link="/projects/northstar"
+            image="/images/photos/vitracker/teammeeting.jpg"
             width="1222"
             height="851"
           />
@@ -119,31 +119,31 @@ export default function app() {
               <b key="1">AR headset</b>,
               " built from scratch",
             ]}
-            link="/pages/projects/project/northstar"
+            link="/projects/northstar"
             image="/images/photos/northstar/onhead.png"
           />
           <Card
             heading="Universal Gestures"
             body="Using on-device machine learning to recognize hand gestures on Meta Quest"
-            link="/pages/projects/universalgestures"
+            link="/projects/universalgestures"
             image="/images/photos/universalgestures/socratica.jpeg"
           />
           <Card
             heading="Universal Text"
             body="Brand new flagship software projects this term!"
-            link="/pages/projects/deepfocus"
+            link="/projects/deepfocus"
             image=""
           />
           <Card
             heading="Anima"
             body="Bringing adjustable focus to VR headsets"
-            link="/pages/projects/varifocalresearch"
+            link="/projects/varifocalresearch"
             image=""
           />
         </div>
 
         <a
-          href="/pages/projects"
+          href="/projects"
           className="
            w-fit
            button
@@ -226,7 +226,7 @@ export default function app() {
               <ButtonDark
                 text="About us"
                 icon="/images/icons/arrow-right-white.png"
-                link="/pages/about"
+                link="/about"
               />
             </div>
           </div>

@@ -20,8 +20,7 @@ export default function NavBar() {
     <nav className="w-full bg-bck-white h-20 flex shrink justify-between items-center px-8 border-solid border-grey-60 border-1">
       <a href="/" className="flex items-center gap-3">
         <img src="/images/assets/uwrl-logo-main.png" alt="" className="h-14" />
-        <h2
-          className="font-neraphic text-bodyLarge text-text-darkBody tracking-logo || max-lg:hidden">
+        <h2 className="font-neraphic text-bodyLarge text-text-darkBody tracking-logo || max-lg:hidden max-md:block">
           Waterloo Reality Labs
         </h2>
       </a>
@@ -38,6 +37,7 @@ export default function NavBar() {
         <div className="fixed inset-0 bg-[url('/images/assets/grid-dark.png')] bg-black bg-opacity-95 flex items-center justify-center z-50 md:hidden">
           <div className="text-white grid text-center gap-9 font-neraphic text-button">
             <a href="/projects">Projects</a>
+            <a href="/">Blog</a>
             <a href="/about">About</a>
             <a href="/contact">Contact</a>
             <ButtonSecondary
@@ -60,9 +60,10 @@ export default function NavBar() {
       max-md:hidden
       "
       >
-        <a href="/pages/projects">Projects</a>
-        <a href="/pages/about">About</a>
-        <a href="/pages/contact">Contact</a>
+        <a href="/projects">Projects</a>
+        <a href="/">Blog</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
         <ButtonDark
           text="Join the Team"
           link="https://discord.gg/vs9XdfuMJu"

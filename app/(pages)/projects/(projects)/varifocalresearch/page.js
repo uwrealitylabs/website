@@ -2,7 +2,6 @@ import NavBar from "@/app/components/NavBar";
 import Footer from "@/app/components/Footer";
 import ProjHeader from "../../ProjHeader";
 import ProjDescrip from "../../ProjDescrip";
-
 export default function VarifocalResearch() {
   return (
     <div className="bg-[url('/images/assets/grid.png')] bg-bck-white">
