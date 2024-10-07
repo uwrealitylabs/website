@@ -146,7 +146,7 @@ export default function App() {
               " built from scratch",
             ]}
             link="/projects/northstar"
-            image="/images/photos/northstar/onhead.png"
+            image="/images/photos/northstar/northstar-headset.png"
           />
           <Card
             heading="Universal Gestures"
@@ -164,7 +164,7 @@ export default function App() {
             heading="Anima"
             body="Bringing adjustable focus to VR headsets"
             link="/projects/varifocalresearch"
-            image=""
+            image="/images/photos/anima/anima.png"
           />
         </div>
 
