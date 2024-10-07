@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useRef } from "react";
 
 import Image from "next/image";
@@ -10,11 +10,10 @@ import Card from "./(pages)/home/card";
 import ButtonSecondary from "./components/ButtonSecondary";
 
 export default function App() {
-
   const Projects = useRef(null);
 
   const ScrollToSection = (ref) => {
-    ref.current.scrollIntoView({ behavior: 'smooth' });
+    ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -72,7 +71,8 @@ export default function App() {
             </h1>
             <button
               onClick={() => ScrollToSection(Projects)}
-              className="bg-bck-grey  text-text-lightBody button-styling font-normal font-neraphic">
+              className="bg-bck-grey  text-text-lightBody button-styling font-normal font-neraphic"
+            >
               Dive Deeper
               <img
                 src="images/icons/arrow-down-white.png"
@@ -133,7 +133,7 @@ export default function App() {
           <Card
             heading="VITracker"
             body="Building custom hardware for real-time visual-inertial SLAM tracking"
-            link="/projects/northstar"
+            link="/projects/vitracker"
             image="/images/photos/vitracker/teammeeting.jpg"
             width="1222"
             height="851"
@@ -156,14 +156,14 @@ export default function App() {
           />
           <Card
             heading="Universal Text"
-            body="Brand new flagship software projects this term!"
-            link="/projects/deepfocus"
-            image=""
+            body="Unity software package for dynamic text representation of a user's virtual environment."
+            link="/projects/universaltext"
+            image="/images/photos/universaltext/UTDemo.png"
           />
           <Card
             heading="Anima"
-            body="Bringing adjustable focus to VR headsets"
-            link="/projects/varifocalresearch"
+            body="Unity VR app for exploring life-sized, real-world building scans."
+            link="/projects/anima"
             image="/images/photos/anima/anima.png"
           />
         </div>
