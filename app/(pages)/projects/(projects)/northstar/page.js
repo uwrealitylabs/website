@@ -9,7 +9,7 @@ export default function Northstar() {
       <NavBar />
       <main className="px-24 py-6 grid gap-y-16 || max-lg:px-12  || max-mobile:px-4">
         <ProjHeader
-          title="Project Northstar"
+          title="Project North Star"
           img="/images/photos/northstar.png"
         />
 

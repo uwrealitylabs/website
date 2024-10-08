@@ -16,6 +16,7 @@ export default function ButtonSecondary({
   target = "no",
   border = "",
   bg,
+  className = ""
 }) {
   const img = icon;
   return (
@@ -23,9 +24,10 @@ export default function ButtonSecondary({
       href={link}
       target={target === "yes" ? "_blank" : "_self"}
       className={`
-      bg-${bg}  color-${border}
+      bg-${bg}  text-${border}
       button-styling font-neraphic
-      border-${border} border-solid border-1  
+      border-${border} border-solid border-1 
+      ${className} 
       hover:scale-97 duration-300  ease-out
 
       max-md:text-body
