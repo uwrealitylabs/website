@@ -34,7 +34,8 @@ export default function Card({ heading, body, image, link, width, height }) {
           >
             <Image
               src={image}
-              alt=""
+              alt=" "
+              loading="eager"
               className="w-380 h-370 object-cover opacity-75 hover:opacity-100 duration-500"
             />
           </div>

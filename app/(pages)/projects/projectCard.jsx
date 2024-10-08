@@ -35,7 +35,7 @@ export default function ProjectCard({ title, descrip, img, link, grid = "" }) {
             : "aspect-[16/7] max-md:aspect-[13/8]"
         }`}
         >
-          <Image src={img} className="w-full h-full object-cover" alt=" "/>
+          <Image src={img} className="w-full h-full object-cover" loading="eager" alt=" "/>
         </div>
       </div>
     </a>
