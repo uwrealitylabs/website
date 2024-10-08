@@ -7,6 +7,15 @@ import NavBar from "@/app/components/NavBar";
 import ProjectCard from "./projectCard";
 import Footer from "@/app/components/Footer";
 import JoinUs from "@/app/components/JoinUs";
+import Image from "next/image";
+
+import Shapes from "@/public/images/assets/shapes.png"
+import RealityFromScratch from "@/public/images/photos/realityfromscratch/reality-from-scratch.png"
+import ProjectNorthStar from "@/public/images/photos/northstar/northstar.png"
+import UniversalGestures from "@/public/images/photos/universalgestures/socratica-uni-gestures.png"
+import UniversalText from "@/public/images/photos/universaltext/UTDemo.png"
+import VITracker from "@/public/images/photos/vitracker/vitracker_v0_s5.png"
+import Anima from "@/public/images/photos/anima/anima.png"
 
 export default function Projects() {
   return (
@@ -36,8 +45,8 @@ export default function Projects() {
                 </span>
               </p>
             </div>
-            <img
-              src="/images/assets/shapes.png"
+            <Image
+              src={Shapes}
               className="h-10 w-auto max-md:hidden"
               alt=""
             />
@@ -61,7 +70,7 @@ export default function Projects() {
                 <b key="rotational">rotational (3DoF) tracking.</b>,
                 " The IMU motion vector data is translated into SteamVR readable input through drivers forked from the OpenVR SDK.",
               ]}
-              img="/images/photos/reality-from-scratch.png"
+              img={RealityFromScratch}
               link="realityfromscratch"
             />
             <ProjectCard
@@ -71,33 +80,33 @@ export default function Projects() {
                 <b key="proj AR">AR device</b>,
                 " using optical combiners and Intel's RealSense T265. Based on Ultraleap's Project North Star.",
               ]}
-              img="/images/photos/northstar.png"
+              img={ProjectNorthStar}
               link="northstar"
             />
             <ProjectCard
               title="Universal Gestures"
               descrip="Using deep learning to understand hand-tracked movements."
-              img="/images/photos/universal-gestures.png"
+              img={UniversalGestures}
               link="universalgestures"
             />
             <ProjectCard
               title="Universal Text"
               descrip="Developing a structured software package for Unity that provides a dynamic textual representation of a user's virtual environment and their interactions within it"
-              img="/images/photos/universaltext/UTDemo.png"
+              img={UniversalText}
               link="universaltext"
               grid=""
             />
             <ProjectCard
               title="VITracker"
               descrip="Building custom hardware for real-time visual-inertial SLAM tracking"
-              img="/images/photos/vitracker/vitracker_v0_s5.png"
+              img={VITracker}
               link="vitracker"
               grid="double"
             />
             <ProjectCard
               title="Anima"
               descrip="Developing a Unity VR app for Meta Quest that lets users explore full-scale photogrammetry scans of real-world buildings"
-              img="/images/photos/anima/anima.png"
+              img={Anima}
               link="anima"
               grid="double"
             />

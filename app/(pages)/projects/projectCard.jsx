@@ -1,5 +1,6 @@
 // adding new projects --> grid = "double" will make it the smaller proj (2 take up one row)
 // other props are self explanatory :)
+import Image from "next/image";
 
 export default function ProjectCard({ title, descrip, img, link, grid = "" }) {
   return (
@@ -34,7 +35,7 @@ export default function ProjectCard({ title, descrip, img, link, grid = "" }) {
             : "aspect-[16/7] max-md:aspect-[13/8]"
         }`}
         >
-          <img src={img} className="w-full h-full object-cover" alt=""/>
+          <Image src={img} className="w-full h-full object-cover" alt=" "/>
         </div>
       </div>
     </a>

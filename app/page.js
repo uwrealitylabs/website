@@ -1,13 +1,22 @@
 "use client";
 import { useRef } from "react";
 
-import Image from "next/image";
 import "./page.css";
 import ButtonDark from "@/app/components/ButtonDark";
 import NavBar from "@/app/components/NavBar";
 import Footer from "@/app/components/Footer";
 import Card from "./(pages)/home/card";
-import ButtonSecondary from "./components/ButtonSecondary";
+
+import Image from "next/image";
+import RFSHeadset from "@/public/images/photos/realityfromscratch/headset.png"
+import VITracker from "@/public/images/photos/vitracker/teammeeting.jpg"
+import NorthStar from "@/public/images/photos/northstar/northstar-headset.png"
+import UniversalGestures from "@/public/images/photos/universalgestures/socratica.jpeg"
+import UniversalText from "@/public/images/photos/universaltext/UTDemo.png"
+import Anima from "@/public/images/photos/anima/anima.png"
+
+
+
 
 export default function App() {
   const Projects = useRef(null);
@@ -126,7 +135,7 @@ export default function App() {
               " built from open-source principles",
             ]}
             link="/projects/realityfromscratch"
-            image="/images/photos/realityfromscratch/headset.png"
+            image={RFSHeadset}
             height="920"
             width="1632"
           />
@@ -134,7 +143,7 @@ export default function App() {
             heading="VITracker"
             body="Building custom hardware for real-time visual-inertial SLAM tracking"
             link="/projects/vitracker"
-            image="/images/photos/vitracker/teammeeting.jpg"
+            image={VITracker}
             width="1222"
             height="851"
           />
@@ -146,25 +155,25 @@ export default function App() {
               " built from scratch",
             ]}
             link="/projects/northstar"
-            image="/images/photos/northstar/northstar-headset.png"
+            image={NorthStar}
           />
           <Card
             heading="Universal Gestures"
             body="Using on-device machine learning to recognize hand gestures on Meta Quest"
             link="/projects/universalgestures"
-            image="/images/photos/universalgestures/socratica.jpeg"
+            image={UniversalGestures}
           />
           <Card
             heading="Universal Text"
             body="Unity software package for dynamic text representation of a user's virtual environment."
             link="/projects/universaltext"
-            image="/images/photos/universaltext/UTDemo.png"
+            image={UniversalText}
           />
           <Card
             heading="Anima"
             body="Unity VR app for exploring life-sized, real-world building scans."
             link="/projects/anima"
-            image="/images/photos/anima/anima.png"
+            image={Anima}
           />
         </div>
 
