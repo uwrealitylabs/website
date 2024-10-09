@@ -137,16 +137,14 @@ export default function App() {
             ]}
             link="/projects/realityfromscratch"
             image={RFSHeadset}
-            height="920"
-            width="1632"
+
           />
           <Card
             heading="VITracker"
             body="Building custom hardware for real-time visual-inertial SLAM tracking"
             link="/projects/vitracker"
             image={VITracker}
-            width="1222"
-            height="851"
+
           />
           <Card
             heading="North Star"
