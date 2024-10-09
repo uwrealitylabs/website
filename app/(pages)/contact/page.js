@@ -26,7 +26,8 @@ export default function Contact() {
 
             {/* SOCIAL LINKS */}
             <div className="grid grid-flow-row text-bodyLarge font-suse underline gap-y-2">
-              <a href="" className="flex items-center gap-4">
+              <a
+                href="https://discord.gg/vs9XdfuMJu" target="_blank" className="flex items-center gap-4">
                 <Image
                   src="/images/icons/discord.png"
                   alt=" "
@@ -36,7 +37,7 @@ export default function Contact() {
                 />
                 Discord
               </a>
-              <a href="" className="flex items-center gap-4">
+              <a href="https://github.com/uwrealitylabs" target="_blank" className="flex items-center gap-4">
                 <Image
                   src="/images/icons/github.png"
                   alt=" "
@@ -46,7 +47,7 @@ export default function Contact() {
                 />
                 Github
               </a>
-              <a href="" className="flex items-center gap-4">
+              <a href="https://www.linkedin.com/company/uwrealitylabs/" target="_blank" className="flex items-center gap-4">
                 <Image
                   src="/images/icons/linkedin.png"
                   alt=" "
@@ -56,7 +57,7 @@ export default function Contact() {
                 />
                 LinkedIn
               </a>
-              <a href="" className="flex items-center gap-4">
+              <a href="https://www.instagram.com/uwrealitylabs/" target="_blank" className="flex items-center gap-4">
                 <Image
                   src="/images/icons/instagram.png"
                   alt=" "

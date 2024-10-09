@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Card({ heading, body, image, link, width, height }) {
   return (
     <section
-      className="bg-bck-grey rounded-xl h-495 w-425
+      className="bg-bck-grey rounded-xl h-495 w-425 hover:bg-bck-card
       border-solid border-bck-white border-1
       ---1024px---
       max-lg:w-340
