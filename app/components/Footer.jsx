@@ -161,7 +161,7 @@ export default function Footer() {
             @ 2024 UW Reality Labs.
           </p>
           <p className="text-text-copyright font-suse text-body">
-            Designed by Spark Mark, Keyan Virani, Flora Hu
+            Created by the Design & Branding Team
           </p>
         </div>
       </div>

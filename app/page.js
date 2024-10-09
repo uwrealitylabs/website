@@ -98,27 +98,12 @@ export default function App() {
       <section
         className="bg-bck-grey bg-[url('/images/assets/grid-dark.png'),_url('/images/assets/proj-vectors.png')] bg-no-repeat bg-center bg-cover 
       text-text-lightBody 
-      flex flex-col items-center justify-center px-20
-   
-
-
-      ---1024px---
-      max-lg:px-6
-
-      
-      "
+      flex flex-col items-center justify-center px-20 || max-lg:px-6"
         id="projects"
         ref={Projects}
       >
         <h2
-          className="font-neraphic text-h2 py-24
-        ---768px--- 
-        max-md:text-h3
-
-        
-        
-        "
-        >
+          className="font-neraphic text-h2 py-24 || max-md:text-h3">
           Our Projects
         </h2>
 
