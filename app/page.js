@@ -14,6 +14,7 @@ import NorthStar from "@/public/images/photos/northstar/northstar-headset.png"
 import UniversalGestures from "@/public/images/photos/universalgestures/socratica.jpeg"
 import UniversalText from "@/public/images/photos/universaltext/UTDemo.png"
 import Anima from "@/public/images/photos/anima/anima.png"
+import LogoAnimation from "@/public/images/assets/uwrl-logo-animation.gif"
 
 
 
@@ -269,10 +270,11 @@ export default function App() {
             </div>
           </div>
           {/* LOGO */}
-          <img
+          <Image
             alt=""
-            src="/images/assets/uwrl-logo-main.png"
-            className=" ml-auto max-w-xs w-full 
+            src={LogoAnimation}
+            unoptimized
+            className=" ml-auto 
             ---520px---
             max-mobile:row-start-2 max-mobile:row-span-2 max-mobile:col-span-2 max-mobile:mx-auto 
           "
