@@ -90,17 +90,17 @@ export default function Projects() {
               link="universalgestures"
             />
             <ProjectCard
-              title="Universal Text"
-              descrip="Developing a structured software package for Unity that provides a dynamic textual representation of a user's virtual environment and their interactions within it"
-              img={UniversalText}
-              link="universaltext"
-              grid=""
-            />
-            <ProjectCard
               title="VITracker"
               descrip="Building custom hardware for real-time visual-inertial SLAM tracking"
               img={VITracker}
               link="vitracker"
+              grid=""
+            />
+            <ProjectCard
+              title="Universal Text"
+              descrip="Developing a structured software package for Unity that provides a dynamic textual representation of a user's virtual environment and their interactions within it"
+              img={UniversalText}
+              link="universaltext"
               grid="double"
             />
             <ProjectCard

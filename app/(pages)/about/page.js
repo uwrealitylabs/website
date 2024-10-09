@@ -3,6 +3,13 @@ import Footer from "@/app/components/Footer";
 import JoinUs from "@/app/components/JoinUs";
 import Member from "./Member";
 
+import Image from "next/image";
+import Gears from "@/public/images/assets/gears.png"
+import Squiggle from "@/public/images/assets/squiggle.png"
+import Star from "@/public/images/assets/star.png"
+import Table from "@/public/images/assets/table-illustration.png"
+import Collage from "@/public/images/photos/collage.png"
+
 export default function About() {
   return (
     <div className="bg-bck-white bg-[url('/images/assets/grid.png')]">
@@ -18,9 +25,9 @@ export default function About() {
       max-mobile:px-4 "
       >
         <header className="max-w-830 text-center mx-auto grid gap-y-6 mb-24 relative">
-            <img src="/images/assets/gears.png"className="absolute max-md:hidden" alt=""/>
-            <img src="/images/assets/squiggle.png" className="absolute -bottom-12 -right-64 max-md:hidden" alt=""/>
-            <img src="/images/assets/star.png" className="absolute bottom-20 -right-10 max-md:hidden" alt=""/>
+            <Image src={Gears} className="absolute max-md:hidden" alt=""/>
+            <Image src={Squiggle} className="absolute -bottom-12 -right-64 max-md:hidden" alt=""/>
+            <Image src={Star} className="absolute bottom-20 -right-10 max-md:hidden" alt=""/>
           <p
             className="font-suse text-body font-bold leading-normal bg-[url('/images/assets/paper-tape.png')] 
           bg-no-repeat bg-contain bg-center w-fit p-6 mx-auto
@@ -40,9 +47,10 @@ export default function About() {
 
         <section className="lg:grid grid-cols-3 gap-6">
           <div className="grid grid-flow-row row-span-2">
-            <img
-              src="/images/assets/table-illustration.png"
+            <Image
+              src={Table}
               className=" object-cover m-auto p-10 lg:row-start-2 max-md:px-32 max-mobile:px-0 max-md:hidden max-lg:w-640"
+              alt=""
             />
             <section className="p-6 border-dashed border-3 border-accents-yellow rounded-lg h-fit lg:row-start-1 max-lg:my-6">
               <h3 className="font-neraphic text-h4 mb-6">Project Philosophy</h3>
@@ -99,9 +107,9 @@ export default function About() {
           </section>
         </section>
 
-        <img
+        <Image
           alt=""
-          src="/images/photos/collage.png"
+          src={Collage}
           className="w-full mx-auto my-16"
         />
 

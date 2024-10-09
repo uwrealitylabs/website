@@ -29,6 +29,7 @@ export default function Contact() {
               <a href="" className="flex items-center gap-4">
                 <Image
                   src="/images/icons/discord.png"
+                  alt=" "
                   width={22}
                   height={17}
                   className="object-contain"
@@ -38,6 +39,7 @@ export default function Contact() {
               <a href="" className="flex items-center gap-4">
                 <Image
                   src="/images/icons/github.png"
+                  alt=" "
                   width={20}
                   height={20}
                   className="object-contain"
@@ -47,6 +49,7 @@ export default function Contact() {
               <a href="" className="flex items-center gap-4">
                 <Image
                   src="/images/icons/linkedin.png"
+                  alt=" "
                   width={20}
                   height={20}
                   className="object-contain"
@@ -56,6 +59,7 @@ export default function Contact() {
               <a href="" className="flex items-center gap-4">
                 <Image
                   src="/images/icons/instagram.png"
+                  alt=" "
                   width={20}
                   height={20}
                   className="object-contain"

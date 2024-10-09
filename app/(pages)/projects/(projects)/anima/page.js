@@ -4,6 +4,8 @@ import ProjHeader from "../../ProjHeader";
 import ProjDescrip from "../../ProjDescrip";
 import JoinUs from "@/app/components/JoinUs";
 
+import Anima from "@/public/images/photos/anima/anima.png"
+
 export default function UniversalGestures() {
   return (
     <div className="bg-[url('/images/assets/grid.png')] bg-bck-white">
@@ -11,7 +13,7 @@ export default function UniversalGestures() {
       <main className="px-24 py-6 grid gap-y-16 || max-lg:px-12  || max-mobile:px-4">
         <ProjHeader
           title="Anima"
-          img="/images/photos/anima/anima.png"
+          img={Anima}
         />
 
         <ProjDescrip

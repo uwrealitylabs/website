@@ -9,7 +9,7 @@ import Card from "./(pages)/home/card";
 
 import Image from "next/image";
 import RFSHeadset from "@/public/images/photos/realityfromscratch/headset.png"
-import VITracker from "@/public/images/photos/vitracker/teammeeting.jpg"
+import VITracker from "@/public/images/photos/vitracker/teammeeting.png"
 import NorthStar from "@/public/images/photos/northstar/northstar-headset.png"
 import UniversalGestures from "@/public/images/photos/universalgestures/socratica.jpeg"
 import UniversalText from "@/public/images/photos/universaltext/UTDemo.png"

@@ -3,6 +3,8 @@ import Footer from "@/app/components/Footer";
 import ProjHeader from "../../ProjHeader";
 import ProjDescrip from "../../ProjDescrip";
 
+import NorthStar from "@/public/images/photos/northstar/northstar.png"
+
 export default function Northstar() {
   return (
     <div className="bg-[url('/images/assets/grid.png')] bg-bck-white">
@@ -10,7 +12,7 @@ export default function Northstar() {
       <main className="px-24 py-6 grid gap-y-16 || max-lg:px-12  || max-mobile:px-4">
         <ProjHeader
           title="Project North Star"
-          img="/images/photos/northstar.png"
+          img={NorthStar}
         />
 
         <ProjDescrip

@@ -33,6 +33,7 @@ export default function Linktree() {
               width={22}
               height={17}
               className="object-contain"
+              alt=""
             />
             Discord
           </a>
@@ -42,6 +43,7 @@ export default function Linktree() {
               width={20}
               height={20}
               className="object-contain"
+              alt=""
             />
             Github
           </a>
@@ -51,6 +53,7 @@ export default function Linktree() {
               width={20}
               height={20}
               className="object-contain"
+              alt=""
             />
             LinkedIn
           </a>
@@ -60,6 +63,7 @@ export default function Linktree() {
               width={20}
               height={20}
               className="object-contain"
+              alt=""
             />
             Instagram
           </a>
