@@ -8,16 +8,13 @@ import Footer from "@/app/components/Footer";
 import Card from "./(pages)/home/card";
 
 import Image from "next/image";
-import RFSHeadset from "@/public/images/photos/realityfromscratch/headset.png"
-import VITracker from "@/public/images/photos/vitracker/teammeeting.png"
-import NorthStar from "@/public/images/photos/northstar/northstar-headset.png"
-import UniversalGestures from "@/public/images/photos/universalgestures/socratica.jpeg"
-import UniversalText from "@/public/images/photos/universaltext/UTDemo.png"
-import Anima from "@/public/images/photos/anima/anima.png"
-import LogoAnimation from "@/public/images/assets/uwrl-logo-animation.gif"
-
-
-
+import RFSHeadset from "@/public/images/photos/realityfromscratch/headset.png";
+import VITracker from "@/public/images/photos/vitracker/teammeeting.png";
+import NorthStar from "@/public/images/photos/northstar/northstar-headset.png";
+import UniversalGestures from "@/public/images/photos/universalgestures/socratica.jpeg";
+import UniversalText from "@/public/images/photos/universaltext/UTDemo.png";
+import Anima from "@/public/images/photos/anima/anima.png";
+import LogoAnimation from "@/public/images/assets/uwrl-logo-animation.gif";
 
 export default function App() {
   const Projects = useRef(null);
@@ -102,16 +99,15 @@ export default function App() {
         id="projects"
         ref={Projects}
       >
-        <h2
-          className="font-neraphic text-h2 py-24 || max-md:text-h3">
+        <h2 className="font-neraphic text-h2 py-24 || max-md:text-h3">
           Our Projects
         </h2>
 
         {/* CARDS */}
         <div
-          className="flex flex-wrap justify-center items-center gap-12 max-w-1360 
-        max-mobile:gap-2
-        "
+          className="grid grid-cols-3 gap-6"
+        // flex flex-wrap justify-center items-center gap-12 max-w-1360 max-mobile:gap-2
+        
         >
           <Card
             heading="Reality From Scratch"
@@ -122,14 +118,12 @@ export default function App() {
             ]}
             link="/projects/realityfromscratch"
             image={RFSHeadset}
-
           />
           <Card
             heading="VITracker"
             body="Building custom hardware for real-time visual-inertial SLAM tracking"
             link="/projects/vitracker"
             image={VITracker}
-
           />
           <Card
             heading="North Star"

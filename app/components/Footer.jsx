@@ -66,7 +66,7 @@ export default function Footer() {
         <nav className="flex gap-12 ">
           <div className="flex flex-col gap-2">
             <a
-              href="/pages/home"
+              href="#"
               className="font-suse text-text-lightBody text-xl
               hover:text-text-lightSub duration-300
               "
@@ -74,7 +74,7 @@ export default function Footer() {
               Home
             </a>
             <a
-              href="/pages/projects"
+              href="/projects"
               className="font-suse text-text-lightBody text-xl              
               hover:text-text-lightSub duration-300
               "
@@ -82,7 +82,7 @@ export default function Footer() {
               Projects
             </a>
             <a
-              href="/pages/about"
+              href="/about"
               className="font-suse text-text-lightBody text-xl              
               hover:text-text-lightSub duration-300
               "
@@ -90,7 +90,7 @@ export default function Footer() {
               About
             </a>
             <a
-              href="/pages/contact"
+              href="/contact"
               className="font-suse text-text-lightBody text-xl              
               hover:text-text-lightSub duration-300
               "

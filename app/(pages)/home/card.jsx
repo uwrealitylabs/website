@@ -14,12 +14,8 @@ export default function Card({ heading, body, image, link, width, height }) {
 
       ---520px---
       max-mobile:scale-[.95]
-      hover:scale-105 duration-500
-
-
-
-    "
-    >
+      hover:scale-105 duration-500">
+        
       <a href={link}>
         <div className="flex flex-col justify-center items-center px-3 pt-3 gap-5">
           {/* IMAGE HERE WITH BCK -define height --cards will stay same size, flex will change */}
