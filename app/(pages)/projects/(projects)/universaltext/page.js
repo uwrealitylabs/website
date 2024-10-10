@@ -1,6 +1,6 @@
 import NavBar from "@/app/components/NavBar";
 import Footer from "@/app/components/Footer";
-import ProjHeader from "../../ProjHeader";
+import ImageHeader from "../../../../components/ImageHeading";
 import ProjDescrip from "../../ProjDescrip";
 import JoinUs from "@/app/components/JoinUs";
 
@@ -9,7 +9,7 @@ export default function UniversalGestures() {
     <div className="bg-[url('/images/assets/grid.png')] bg-bck-white">
       <NavBar />
       <main className="px-24 py-6 grid gap-y-16 || max-lg:px-12  || max-mobile:px-4">
-        <ProjHeader
+        <ImageHeader
           title="Universal Text"
           img="/images/photos/universaltext/UTDemo.png"
         />

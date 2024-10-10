@@ -27,7 +27,7 @@ export default function App() {
     <div>
       <NavBar />
       {/* --------------- HERO SECTION -------------------- */}
-      <heading
+      <header
         className="hero       
       bg-[url('/images/assets/grid.png')] bg-bck-white 
       flex justify-center items-center"
@@ -89,7 +89,7 @@ export default function App() {
             </button>
           </div>
         </div>
-      </heading>
+      </header>
 
       {/* --------------- PROJECTS SECTION -------------------- */}
       <section

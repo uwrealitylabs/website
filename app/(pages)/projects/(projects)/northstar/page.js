@@ -1,6 +1,6 @@
 import NavBar from "@/app/components/NavBar";
 import Footer from "@/app/components/Footer";
-import ProjHeader from "../../ProjHeader";
+import ImageHeader from "../../../../components/ImageHeading";
 import ProjDescrip from "../../ProjDescrip";
 
 import NorthStar from "@/public/images/photos/northstar/northstar.png"
@@ -10,7 +10,7 @@ export default function Northstar() {
     <div className="bg-[url('/images/assets/grid.png')] bg-bck-white">
       <NavBar />
       <main className="px-24 py-6 grid gap-y-16 || max-lg:px-12  || max-mobile:px-4">
-        <ProjHeader
+        <ImageHeader
           title="Project North Star"
           img={NorthStar}
         />

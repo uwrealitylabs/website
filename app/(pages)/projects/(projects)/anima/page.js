@@ -1,20 +1,21 @@
 import NavBar from "@/app/components/NavBar";
 import Footer from "@/app/components/Footer";
-import ProjHeader from "../../ProjHeader";
+import ImageHeader from "../../../../components/ImageHeading";
 import ProjDescrip from "../../ProjDescrip";
 import JoinUs from "@/app/components/JoinUs";
+import BackButton from "@/app/components/BackButton";
 
-import Anima from "@/public/images/photos/anima/anima.png"
+import Anima from "@/public/images/photos/anima/anima.png";
 
 export default function UniversalGestures() {
   return (
     <div className="bg-[url('/images/assets/grid.png')] bg-bck-white">
       <NavBar />
       <main className="px-24 py-6 grid gap-y-16 || max-lg:px-12  || max-mobile:px-4">
-        <ProjHeader
-          title="Anima"
-          img={Anima}
-        />
+        <div>
+          <BackButton />
+          <ImageHeader title="Anima" img={Anima} />
+        </div>
 
         <ProjDescrip
           projecttype="R&D Sowftware"
@@ -81,7 +82,7 @@ export default function UniversalGestures() {
           ]}
           link="https://github.com/uwrealitylabs/universal-gestures-unity"
         />
-        <JoinUs/>
+        <JoinUs />
       </main>
       <Footer />
     </div>

@@ -4,7 +4,7 @@ export const metadata = {
 };
 
 import NavBar from "@/app/components/NavBar";
-import ProjectCard from "./projectCard";
+import ProjectCard from "./ProjectCard";
 import Footer from "@/app/components/Footer";
 import JoinUs from "@/app/components/JoinUs";
 import Image from "next/image";
@@ -22,15 +22,7 @@ export default function Projects() {
     <>
       <NavBar />
       <section
-        className="bg-bck-white bg-[url('/images/assets/grid.png')]
-      px-24 py-12
-      ---768px---
-      max-md:px-8
-
-      ---520px---
-      max-mobile:px-4 
-      "
-      >
+        className="bg-bck-white bg-[url('/images/assets/grid.png')] px-24 py-12 || max-md:px-8 || max-mobile:px-4">
         <main>
           <header className="flex justify-between items-end gap-24 mb-12">
             <div className="max-w-640 flex flex-col gap-4">

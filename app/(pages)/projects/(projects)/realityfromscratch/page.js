@@ -1,19 +1,25 @@
 import NavBar from "@/app/components/NavBar";
 import Footer from "@/app/components/Footer";
-import ProjHeader from "../../ProjHeader";
+import ImageHeader from "../../../../components/ImageHeading";
 import ProjDescrip from "../../ProjDescrip";
 import ContentImages from "../../ContentImages";
 import JoinUs from "@/app/components/JoinUs";
+import BackButton from "@/app/components/BackButton";
+import RFS from "@/public/images/photos/realityfromscratch/reality-from-scratch.png"
+
 
 export default function RealityFromScratch() {
   return (
     <div className="bg-[url('/images/assets/grid.png')] bg-bck-white">
       <NavBar />
       <main className="px-24 py-6 grid gap-y-16 || max-lg:px-12  || max-mobile:px-4">
-        <ProjHeader
+        <div>
+        <BackButton/>
+        <ImageHeader
           title="Reality From Scratch"
-          img="/images/photos/reality-from-scratch.png"
-        />
+          img={RFS}
+          />
+          </div>
 
         <ProjDescrip
           projecttype="VR Hardware"
@@ -46,11 +52,11 @@ export default function RealityFromScratch() {
         />
 
         <section className="mobile:grid mobile:grid-cols-2 mx-auto max-mobile:flex max-mobile:flex-col gap-6 my-16">
-          <ContentImages photo="realityfromscratch/headset.png" grid="full" />
+          {/* <ContentImages photo="realityfromscratch/headset.png" grid="full" />
           <ContentImages photo="realityfromscratch/groupphoto.png" />
           <ContentImages photo="realityfromscratch/pcb2.png" />
           <ContentImages photo="realityfromscratch/material.png" grid="full" />
-          <ContentImages photo="realityfromscratch/pcb1.png" grid="full" />
+          <ContentImages photo="realityfromscratch/pcb1.png" grid="full" /> */}
         </section>
 
         <section className="text-bodyLarge font-suse leading-normal md:w-1/2 max-mobile:text-body">
