@@ -100,13 +100,13 @@ export default function App() {
         id="projects"
         ref={Projects}
       >
-        <h2 className="font-neraphic text-h2 py-24 || max-md:text-h3">
+        <h2 className="font-neraphic text-h2 py-24 || max-md:text-h3 || max-mobile:pb-16">
           Our Projects
         </h2>
 
         {/* CARDS */}
         <div
-          className="grid grid-cols-3 gap-6 max-w-1360 || max-lg:grid-cols-2 || max-md:mx-6  || max-sm:grid-cols-1 max-sm:mx-12 || max-mobile:mx-0">
+          className="grid grid-cols-3 gap-6 max-w-1360 || max-lg:grid-cols-2 || max-lg:mx-6  || max-sm:grid-cols-1 max-sm:mx-6 || ">
           <Card
             heading="Reality From Scratch"
             body={[
