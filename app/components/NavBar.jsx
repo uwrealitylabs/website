@@ -37,7 +37,7 @@ export default function NavBar() {
         <div className="fixed inset-0 bg-[url('/images/assets/grid-dark.png')] bg-black bg-opacity-95 flex items-center justify-center z-50 md:hidden">
           <div className="text-white grid text-center gap-9 font-neraphic text-button">
             <a href="/projects">Projects</a>
-            <a href="/">Blog</a>
+            <a href="/blogs">Blog</a>
             <a href="/about">About</a>
             <a href="/contact">Contact</a>
             <ButtonSecondary
@@ -61,7 +61,7 @@ export default function NavBar() {
       "
       >
         <a href="/projects">Projects</a>
-        <a href="/">Blog</a>
+        <a href="/blogs">Blog</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
         <ButtonDark

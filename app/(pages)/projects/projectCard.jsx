@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function ProjectCard({ title, descrip, img, link, grid = "" }) {
   return (
     <a
-      href={`/projects//${link}`}
+      href={`/projects/${link}`}
       className={`
     hover:scale-102
     duration-300
@@ -23,7 +23,7 @@ export default function ProjectCard({ title, descrip, img, link, grid = "" }) {
           <h2 className="text-h4 font-neraphic max-mobile:text-button mb-2">
             {title}
           </h2>
-          <p className="font-suse text-bodyLarge leading-normal max-mobile:text-body">
+          <p className="font-suse text-bodyLarge tracking-tight leading-normal max-mobile:text-body">
             {descrip}
           </p>
         </header>

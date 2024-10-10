@@ -13,6 +13,7 @@ html, body {
   font-size: 12px;
   width: 100%;
   overflow-x: hidden;
+  background-color: #FFFCF3;
 }
 
 .button-styling {

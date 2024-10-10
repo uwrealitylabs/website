@@ -48,6 +48,7 @@ module.exports = {
         370: "23rem",
         425: "27rem",
         700: "43.75rem",
+        74 : "4.6rem"
       },
       colors: {
         background: "var(--background)",
@@ -86,6 +87,7 @@ module.exports = {
         body: "1rem",
         bodyLarge: "1.25rem",
         button: "1.125rem",
+        small : "0.875rem"
       },
       fontFamily: {
         suse: "var(--font-suse)",
