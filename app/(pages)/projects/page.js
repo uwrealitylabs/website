@@ -4,7 +4,7 @@ export const metadata = {
 };
 
 import NavBar from "@/app/components/NavBar";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "./projectCard";
 import Footer from "@/app/components/Footer";
 import JoinUs from "@/app/components/JoinUs";
 import Image from "next/image";
