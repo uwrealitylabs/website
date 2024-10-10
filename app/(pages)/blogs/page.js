@@ -37,7 +37,7 @@ export default function Blogs() {
         {/* BLOG POSTS */}
         <section className="grid grid-cols-3 gap-6 max-md:grid-cols-2 mb-24">
           <BlogCard
-            title="Reality From Scratch"
+            title="Our First Kickoff Meeting!"
             descrip="The modular, open-source VR headset for research and experimentation."
             img={RFS}
             link="firstkickoff"
