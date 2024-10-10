@@ -27,7 +27,7 @@ export default function App() {
     <div>
       <NavBar />
       {/* --------------- HERO SECTION -------------------- */}
-      <section
+      <heading
         className="hero       
       bg-[url('/images/assets/grid.png')] bg-bck-white 
       flex justify-center items-center"
@@ -37,17 +37,15 @@ export default function App() {
         hero-main 
         bg-[url('/images/assets/iso-grid-hero.png'),_url('/images/assets/city.png')] bg-bck-white bg-no-repeat bg-bottom
         relative 
-        rounded-2xl
         flex justify-center items-center flex-col gap-7
-        border-solid border-bck-grey border-1
+        border-solid border-bck-grey border-1 rounded-2xl
         my-12 mx-32 
         ---1024px---
         max-lg:mx-20
-
         ---768px--- 
         max-md:mx-6
-
-        ---3 --- 
+        max-md:pb-10
+        ---520px--- 
         max-mobile:mx-2 max-mobile:my-6 max-mobile:h-96
         "
         >
@@ -66,10 +64,12 @@ export default function App() {
             max-lg:px-12
 
             ---768[x--- 
-            max-md:text-h2
+            max-md:text-h3
             
             ---520px---
             max-mobile:text-h4
+
+            max-[600]:text-h4
             
             "
             >
@@ -89,13 +89,14 @@ export default function App() {
             </button>
           </div>
         </div>
-      </section>
+      </heading>
 
       {/* --------------- PROJECTS SECTION -------------------- */}
       <section
         className="bg-bck-grey bg-[url('/images/assets/grid-dark.png'),_url('/images/assets/proj-vectors.png')] bg-no-repeat bg-center bg-cover 
       text-text-lightBody 
-      flex flex-col items-center justify-center px-20 || max-lg:px-6"
+      flex flex-col items-center justify-center px-20 || max-lg:px-6 || max-md:rounded-3xl
+      "
         id="projects"
         ref={Projects}
       >
@@ -105,10 +106,7 @@ export default function App() {
 
         {/* CARDS */}
         <div
-          className="grid grid-cols-3 gap-6"
-        // flex flex-wrap justify-center items-center gap-12 max-w-1360 max-mobile:gap-2
-        
-        >
+          className="grid grid-cols-3 gap-6 max-w-1360 || max-lg:grid-cols-2 || max-md:mx-6  || max-sm:grid-cols-1 max-sm:mx-12 || max-mobile:mx-0">
           <Card
             heading="Reality From Scratch"
             body={[

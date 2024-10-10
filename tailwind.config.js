@@ -103,6 +103,7 @@ module.exports = {
         "16/7": "16 / 7",
         "3/2": "3 / 2",
         "2/1": "2 / 1",
+        "15/16": "15 / 16"
       },
       gridTemplateColumns: {
         two: "repeat(2, (2fr, 1fr));",
