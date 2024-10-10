@@ -5,7 +5,13 @@ import ProjDescrip from "../../ProjDescrip";
 import ContentImages from "../../ContentImages";
 import JoinUs from "@/app/components/JoinUs";
 import BackButton from "@/app/components/BackButton";
+
 import RFS from "@/public/images/photos/realityfromscratch/reality-from-scratch.png"
+import Headset from "@/public/images/photos/realityfromscratch/headset.png"
+import GroupPhoto from "@/public/images/photos/realityfromscratch/groupphoto.png"
+import PCB2 from "@/public/images/photos/realityfromscratch/pcb2.png"
+import Materials from "@/public/images/photos/realityfromscratch/material.png"
+import PCB1 from "@/public/images/photos/realityfromscratch/pcb1.png"
 
 
 export default function RealityFromScratch() {
@@ -52,11 +58,11 @@ export default function RealityFromScratch() {
         />
 
         <section className="mobile:grid mobile:grid-cols-2 mx-auto max-mobile:flex max-mobile:flex-col gap-6 my-16">
-          {/* <ContentImages photo="realityfromscratch/headset.png" grid="full" />
-          <ContentImages photo="realityfromscratch/groupphoto.png" />
-          <ContentImages photo="realityfromscratch/pcb2.png" />
-          <ContentImages photo="realityfromscratch/material.png" grid="full" />
-          <ContentImages photo="realityfromscratch/pcb1.png" grid="full" /> */}
+          <ContentImages photo={Headset} grid="full" />
+          <ContentImages photo={GroupPhoto} />
+          <ContentImages photo={PCB2} />
+          <ContentImages photo={Materials} grid="full" />
+          <ContentImages photo={PCB1} grid="full" />
         </section>
 
         <section className="text-bodyLarge font-suse leading-normal md:w-1/2 max-mobile:text-body">
