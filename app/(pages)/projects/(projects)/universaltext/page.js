@@ -3,20 +3,27 @@ import Footer from "@/app/components/Footer";
 import ImageHeader from "../../../../components/ImageHeading";
 import ProjDescrip from "../../ProjDescrip";
 import JoinUs from "@/app/components/JoinUs";
+import BackButton from "@/app/components/BackButton";
 
-export default function UniversalGestures() {
+import HeaderImage from "@/public/images/photos/universaltext/UTDemo.png"
+import Head from "next/head";
+
+export default function UniversalText() {
   return (
     <div className="bg-[url('/images/assets/grid.png')] bg-bck-white">
       <NavBar />
       <main className="px-24 py-6 grid gap-y-16 || max-lg:px-12  || max-mobile:px-4">
+        <div>
+        <BackButton/>
         <ImageHeader
           title="Universal Text"
-          img="/images/photos/universaltext/UTDemo.png"
-        />
+          img={HeaderImage}
+          />
+          </div>
 
         <ProjDescrip
           projecttype="R&D Sowftware"
-          details="Developing a structured software package for Unity that provides a dynamic textual representation of a user&apos;s virtual environment and their interactions within it"
+          details="Building a dynamic textual representation of a user’s virtual environment and their interactions within it."
           heading="Building a dynamic textual representation of a user’s virtual environment and their interactions within it."
           description={[
             <p key="10">
