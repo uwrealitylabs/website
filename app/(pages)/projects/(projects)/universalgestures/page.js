@@ -31,29 +31,12 @@ export default function UniversalGestures() {
               SDK (UPM). This SDK enables developers to interface with the
               sensors on Quest headsets, and easily enable hand tracking
               functionality within their app. However, the functionality
-              surrounding detecting specific hand poses is limited. For example,
-              the All-in-One SDK allows you to recognize when you make a
-              thumbs-up gesture with one of your hands. The way it does this is
-              allowing you to create a configuration using flexion and curl
-              values detected from your hand.
+              surrounding detecting specific hand poses is limited by the
+              limited customization to the curl and flexion settings of the
+              fingers. Additionally, the existing package does not take into
+              account the relative position of your hands to one another.
             </p>,
 
-            <p key="">
-              The limitation of this approach is the limited customization to
-              the curl and flexion settings of the fingers. This tool only
-              allows you to define your gesture with fingers curled, slightly
-              curled, not curled, flexed, slightly flexed, or unflexed, etc. It
-              does provide some threshold customization to define your own
-              poses, but it is difficult to create a profile for complex
-              gestures (like making a heart with your hands) that behaves like
-              you would expect it to. Additionally, the existing package does
-              not take into account the relative position of your hands to one
-              another. Without writing additional code, making a circle with
-              your hands together would be recognized the same as making
-              half-circles with both hands spread apart. This makes recognizing
-              a specific, complex shape that is formed with two hands together
-              very difficult.
-            </p>,
             <p key="">
               The goal of Universal Gestures is to create an importable Unity
               package which expands and simplifies the hand gesture recognition
@@ -66,7 +49,7 @@ export default function UniversalGestures() {
               we create in C#, which will finally be attachable to GameObjects
               within Unity.
             </p>,
-            <p key=""> 
+            <p key="">
               From the developers perspective, all they have to do is import our
               package, attach the “UWRL Hand Pose Detection” script to an object
               within their Scene, choose which gesture they want to recognize,
