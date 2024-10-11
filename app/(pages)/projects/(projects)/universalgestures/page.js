@@ -3,83 +3,87 @@ import Footer from "@/app/components/Footer";
 import ImageHeader from "../../../../components/ImageHeading";
 import ProjDescrip from "../../ProjDescrip";
 import JoinUs from "@/app/components/JoinUs";
+import BackButton from "@/app/components/BackButton";
+import Image from "next/image";
+import ContentImages from "../../ContentImages";
+
+import UniGes from "@/public/images/photos/universalgestures/socratica-uni-gestures.png";
+import Demo from "@/public/images/photos/universalgestures/uni-ges-demo.png";
 
 export default function UniversalGestures() {
   return (
     <div className="bg-[url('/images/assets/grid.png')] bg-bck-white">
       <NavBar />
       <main className="px-24 py-6 grid gap-y-16 || max-lg:px-12  || max-mobile:px-4">
-        <ImageHeader
-          title="Universal Gestures"
-          img="/images/photos/universalgestures/socratica-uni-gestures.png"
-        />
+        <div>
+          <BackButton />
+          <ImageHeader title="Universal Gestures" img={UniGes} />
+        </div>
 
         <ProjDescrip
-          projecttype="R&D Sowftware"
+          projecttype="R&D Software"
           details="Building a software package for Meta Quest headsets geared towards developers of mixed-reality video games and apps that use hand tracking"
-          heading="The modular, open-source VR headset for research and experimentation."
+          heading="Software package for Meta Quest headsets geared towards developers of mixed-reality video games and apps that use hand tracking"
           description={[
-            <p key="10">
-              When you prompt a virtual assistant (for example Meta AI on
-              Raybans glasses), what happens when you ask “What am I looking
-              at”? Currently, the pipeline seems rather simplistic. The cameras
-              on the glasses take a picture, that picture is passed through a
-              model that can assign text labels to images, and finally that text
-              label describing the whole image is passed into an LLM. This
-              process, especially the step where a model must describe
-              everything in an image using words, is often inaccurate.
+            <p key="">
+              For developers who build using Unity, the most popular editor for
+              creating immersive experiences, Meta provides the XR All-in-One
+              SDK (UPM). This SDK enables developers to interface with the
+              sensors on Quest headsets, and easily enable hand tracking
+              functionality within their app. However, the functionality
+              surrounding detecting specific hand poses is limited. For example,
+              the All-in-One SDK allows you to recognize when you make a
+              thumbs-up gesture with one of your hands. The way it does this is
+              allowing you to create a configuration using flexion and curl
+              values detected from your hand.
             </p>,
 
-            <p key="12">
-              What if we could build a system that…
-              <br />
-              …provides a richer text summary of a virtual environment, complete
-              with descriptions of how objects compose each other, are placed
-              within/next to/on top of each other?
-              <br />
-              …also describes how you, the user, is interacting with that
-              environment at any moment? Could we assign additional text to
-              describe that you are pointing at a specific object, or reaching
-              out for one?
-              <br />
-              …runs in real time, that is, can constantly update every frame to
-              provide an updated description. That way, we wouldn&apos;t have to
-              wait for text generation, and we could create a live captioning
-              system? …runs entirely on-device, meaning this information is
-              never sent to the cloud?
+            <p key="">
+              The limitation of this approach is the limited customization to
+              the curl and flexion settings of the fingers. This tool only
+              allows you to define your gesture with fingers curled, slightly
+              curled, not curled, flexed, slightly flexed, or unflexed, etc. It
+              does provide some threshold customization to define your own
+              poses, but it is difficult to create a profile for complex
+              gestures (like making a heart with your hands) that behaves like
+              you would expect it to. Additionally, the existing package does
+              not take into account the relative position of your hands to one
+              another. Without writing additional code, making a circle with
+              your hands together would be recognized the same as making
+              half-circles with both hands spread apart. This makes recognizing
+              a specific, complex shape that is formed with two hands together
+              very difficult.
             </p>,
-            <p key="13">
-              If we created this, we could use it for…
-              <br />
-              …in-application virtual assistants that make use of a rich text
-              summary for high-accuracy responses
-              <br />
-              …virtual science labs where users could receive detailed
-              auto-generated scientific explanations about tools and objects
-              they interact with
-              <br />
-              …dynamic VR scene descriptions for the visually impaired,
-              describing layout and objects, or even what they&apos;re holding,
-              pointing at or nearby to
-              <br />
-              …and so much more
+            <p key="">
+              The goal of Universal Gestures is to create an importable Unity
+              package which expands and simplifies the hand gesture recognition
+              system provided by Meta. Instead of using an on-or-off approach to
+              finger poses, we will take the float values given by the sensors
+              on the headset for finger positions and apply a Machine Learning
+              approach. By collecting a training set of popular hand gestures,
+              we will train neural networks to classify them. The output of
+              these trained neural networks will be accessible to scripts that
+              we create in C#, which will finally be attachable to GameObjects
+              within Unity.
             </p>,
-            <p key="14">
-              Universal Text aims to explore this. We are creating a structured
-              software package for Unity that allows for real time captioning of
-              a VR user&apos;s interactions with their virtual environment. In
-              other words, tools provided by our package aim to describe in
-              natural language "what&apos;s happening" in a VR application at
-              any moment in time, as if recounted by a third party observer.
-              This textual description will be rich in detail and generated
-              on-the-fly, providing seamless integration of tutorials, live
-              captioning for accessibility, or virtual assistants into VR
-              applications.
+            <p key=""> 
+              From the developers perspective, all they have to do is import our
+              package, attach the “UWRL Hand Pose Detection” script to an object
+              within their Scene, choose which gesture they want to recognize,
+              and specify a function to be run when it is recognized. Just like
+              that, the difficult part of recognizing a gesture is handled for
+              them—they can immediately get to work on their creative project.
             </p>,
           ]}
           link="https://github.com/uwrealitylabs/universal-gestures-unity"
         />
-        <JoinUs/>
+        <section className="">
+          <Image
+            src={Demo}
+            className="aspect-16/7 rounded-2xl mx-auto max-w-990 w-full mt-24"
+          />
+        </section>
+        <JoinUs />
       </main>
       <Footer />
     </div>
