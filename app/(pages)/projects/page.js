@@ -15,6 +15,8 @@ import ProjectNorthStar from "@/public/images/photos/northstar/northstar.png"
 import UniversalGestures from "@/public/images/photos/universalgestures/socratica-uni-gestures.png"
 import UniversalText from "@/public/images/photos/universaltext/UTDemo.png"
 import VITracker from "@/public/images/photos/vitracker/vitracker_v0_s5.png"
+import HorizontalRender from "@/public/images/photos/vitracker/vitracker_v0_s3.png";
+
 import Anima from "@/public/images/photos/anima/anima.png"
 
 export default function Projects() {
@@ -84,7 +86,7 @@ export default function Projects() {
             <ProjectCard
               title="VITracker"
               descrip="Building custom hardware for real-time visual-inertial SLAM tracking"
-              img={VITracker}
+              img={HorizontalRender}
               link="vitracker"
               grid=""
             />
