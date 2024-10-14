@@ -78,12 +78,12 @@ export default function App() {
             </h1>
             <button
               onClick={() => ScrollToSection(Projects)}
-              className="bg-bck-grey  text-text-lightBody button-styling font-normal font-neraphic"
+              className="bg-bck-grey text-text-lightBody button-styling font-normal font-neraphic group"
             >
               Dive Deeper
               <img
-                src="images/icons/arrow-down-white.png"
-                className="w-4 mb-1"
+                src="images/icons/arrow-right-white.png"
+                className="w-4 mb-1 group-hover:rotate-[90deg] duration-300"
                 alt=""
               />
             </button>
@@ -160,7 +160,9 @@ export default function App() {
            button
            border-solid border-bck-white border-2
            bg-bck-grey
-           rounded-lg font-bold font-suse text-body leading-normal px-6 py-4 mb-24 mt-12"
+           rounded-lg font-bold font-suse text-body leading-normal px-6 py-4 mb-24 mt-12
+           hover:bg-bck-white hover:text-text-darkBody hover:scale-y-97 duration-300 ease-in-out
+           "
         >
           View All Projects
         </a>

@@ -34,10 +34,10 @@ export default function Footer() {
           <a
             href="https://discord.gg/vs9XdfuMJu"
             target="_blank"
-            className="bg-bck-white  button-styling font-neraphic max-md:hidden"
+            className="bg-bck-white  button-styling font-neraphic max-md:hidden group hover:scale-y-97 duration-300"
           >
             Join the team
-            <img src="/images/icons/arrow-right.png" alt="" />
+            <img src="/images/icons/arrow-right.png" className="group-hover:rotate-[315deg] duration-300" alt="" />
           </a>
 
           <div className="max-md:hidden">
@@ -99,7 +99,7 @@ export default function Footer() {
             <a
               href="https://discord.gg/vs9XdfuMJu"
               target="_blank"
-              className="font-suse text-text-lightSub text-xl underline decoration-text-lightSub flex justify-between items-center w-36
+              className="font-suse text-text-lightSub text-xl underline decoration-text-lightSub flex justify-between items-center w-36 group
 
             "
             >
@@ -107,46 +107,46 @@ export default function Footer() {
               <img
                 src="/images/icons/arrow-up-right-grey.png"
                 alt=""
-                className="h-6"
+                className="h-6 group-hover:rotate-45 duration-200"
               />
             </a>
 
             <a
               href="https://github.com/uwrealitylabs"
               target="_blank"
-              className="font-suse text-text-lightSub text-xl underline decoration-text-lightSub flex justify-between items-center w-36"
+              className="font-suse text-text-lightSub text-xl underline decoration-text-lightSub flex justify-between items-center w-36 group"
             >
               GitHub
               <img
                 src="/images/icons/arrow-up-right-grey.png"
                 alt=""
-                className="h-6"
+                className="h-6 group-hover:rotate-45 duration-200"
               />
             </a>
 
             <a
               href="https://www.linkedin.com/company/uwrealitylabs/"
               target="_blank"
-              className="font-suse text-text-lightSub text-xl underline decoration-text-lightSub flex justify-between items-center w-36"
+              className="font-suse text-text-lightSub text-xl underline decoration-text-lightSub flex justify-between items-center w-36 group"
             >
               LinkedIn
               <img
                 src="/images/icons/arrow-up-right-grey.png"
                 alt=""
-                className="h-6"
+                className="h-6 group-hover:rotate-45 duration-200"
               />
             </a>
 
             <a
               href="https://www.instagram.com/uwrealitylabs/"
               target="_blank"
-              className="font-suse text-text-lightSub text-xl underline decoration-text-lightSub flex justify-between items-center w-36"
+              className="font-suse text-text-lightSub text-xl underline decoration-text-lightSub flex justify-between items-center w-36 group"
             >
               Instagram
               <img
                 src="/images/icons/arrow-up-right-grey.png"
                 alt=""
-                className="h-6"
+                className="h-6 group-hover:rotate-45 duration-200"
               />
             </a>
           </div>

@@ -28,9 +28,8 @@ export default function ButtonSecondary({
       button-styling font-neraphic
       border-${border} border-solid border-1 
       ${className} 
-      hover:scale-97 duration-300  ease-out
-
-      max-md:text-body
+      hover:scale-x-97 duration-300  ease-out
+      max-md:text-body group
       `}
       // onMouseOver={(e) => {
       //   const img = e.currentTarget.querySelector("img");
@@ -42,7 +41,7 @@ export default function ButtonSecondary({
       // }}
     >
       {text}
-      {icon && <img src={img} alt="" className="w-4 mb-1" />}
+      {icon && <img src={img} alt="" className="w-4 mb-1 group-hover:rotate-[315deg] duration-300" />}
     </a>
   );
 }
