@@ -78,7 +78,7 @@ export default function App() {
             </h1>
             <button
               onClick={() => ScrollToSection(Projects)}
-              className="bg-bck-grey text-text-lightBody button-styling font-normal font-neraphic group"
+              className="bg-bck-grey text-text-lightBody button-styling font-normal font-neraphic group hover:scale-x-97 duration-300"
             >
               Dive Deeper
               <img
