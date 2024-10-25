@@ -15,6 +15,9 @@ import UniversalGestures from "@/public/images/photos/universalgestures/socratic
 import UniversalText from "@/public/images/photos/universaltext/UTDemo.png";
 import Anima from "@/public/images/photos/anima/anima.png";
 import LogoAnimation from "@/public/images/assets/uwrl-logo-animation.gif";
+import NotionLogo from "@/public/images/assets/notion-logo.webp";
+import WeefLogo from "@/public/images/assets/weef_logo.webp";
+import QuadoaLogo from "@/public/images/assets/quadoa_logo.svg";
 
 export default function App() {
   const Projects = useRef(null);
@@ -35,7 +38,7 @@ export default function App() {
         <div
           className="
         hero-main 
-        bg-[url('/images/assets/iso-grid-hero.png'),_url('/images/assets/city.png')] bg-bck-white bg-no-repeat bg-bottom
+        bg-[url('/images/assets/iso-grid-hero.png'),_url('/images/assets/city.webp')] bg-bck-white bg-no-repeat bg-bottom
         relative 
         flex justify-center items-center flex-col gap-7
         border-solid border-bck-grey border-1 rounded-2xl
@@ -105,8 +108,7 @@ export default function App() {
         </h2>
 
         {/* CARDS */}
-        <div
-          className="grid grid-cols-3 gap-6 max-w-1360 || max-lg:grid-cols-2 || max-lg:mx-6  || max-sm:grid-cols-1 max-sm:mx-6 || ">
+        <div className="grid grid-cols-3 gap-6 max-w-1360 || max-lg:grid-cols-2 || max-lg:mx-6  || max-sm:grid-cols-1 max-sm:mx-6 || ">
           <Card
             heading="Reality From Scratch"
             body={[
@@ -176,14 +178,14 @@ export default function App() {
         {/* --MAIN ABOUT CONTENT --*/}
         <div
           className="px-64 py-28
-          grid grid-cols-2 gap-x-24 max-w-1500 mx-auto
+          grid grid-cols-2 gap-x-24 max-w-1360 mx-auto justify-center items-center
 
 
         ---1536---
-        max-2xl:px-40
+        2xl:px-0 lg:px-12
 
         ---1024px---
-        max-lg:px-32 max-lg:gap-x-14
+        max-lg:px-24 max-lg:gap-x-14
 
         ---768px---
         max-md:px-12 max-md:gap-x-12
@@ -224,7 +226,7 @@ export default function App() {
               </>
 
               <>
-                <p className="font-suse text-body leading-normal">
+                <p className="font-suse text-body 2xl:text-bodyLarge leading-normal">
                   <b className="block">
                     Researching, experimenting, and building.
                   </b>
@@ -232,7 +234,7 @@ export default function App() {
                     We create real-life interfaces for the virtual world.
                   </span>
                 </p>
-                <p className="font-suse text-body leading-normal">
+                <p className="font-suse text-body  2xl:text-bodyLarge leading-normal">
                   Waterloo Reality Labs is the{" "}
                   <b>first design team in Canada</b> that offers students
                   hands-on experience with consumer VR (virtual reality) and AR
@@ -257,6 +259,10 @@ export default function App() {
           "
           />
         </div>
+
+
+
+
 
         {/* SPONSORSHIP SECTION */}
         <section
@@ -301,6 +307,20 @@ export default function App() {
             />
           </div>
         </section>
+        {/* SPONSORS */}
+        <div className="max-w-1360 mx-auto flex items-center flex-col gap-24 py-24">
+          <h2 className="text-h2 font-neraphic max-sm:text-h3">Our Sponsors</h2>
+
+          <section className="grid grid-cols-3 mx-44 gap-24 items-center justify-center max-lg:grid-cols-2 max-sm:mx-12 16 max-sm:grid-cols-1">
+            <Image src={WeefLogo} alt=""  className="mx-auto"/>
+            <Image src={NotionLogo} alt="" className="mx-auto"/>
+            <Image
+              src={QuadoaLogo}
+              alt=""
+              className="max-lg:col-span-full max-lg:sm:max-w-64 max-lg:sm:w-auto mx-auto max-w-96 w-full"
+            />
+          </section>
+        </div>
       </section>
 
       <Footer />
