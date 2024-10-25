@@ -5,8 +5,7 @@ export const metadata = {
 
 export default function Footer() {
   return (
-    <footer
-      className=" w-full h-830 bg-cover bg-no-repeat bg-bottom bg-[url('/images/assets/city-footer.webp')] bg-bck-grey flex || max-[1700px]:justify-center">
+    <footer className=" w-full h-830 bg-cover bg-no-repeat bg-bottom bg-[url('/images/assets/city-footer.webp')] bg-bck-grey flex || max-[1700px]:justify-center">
       <div
         className="flex gap-32 mt-48 ml-48 
       ---1536px---
@@ -17,7 +16,8 @@ export default function Footer() {
 
       max-lg:gap-10
       ---520px---
-      max-mobile:gap-6  max-mobile:mt-16">
+      max-mobile:gap-6  max-mobile:mt-16"
+      >
         {/* main body of text   */}
         <div className="flex flex-col gap-12">
           <h1
@@ -37,7 +37,11 @@ export default function Footer() {
             className="bg-bck-white  button-styling font-neraphic max-md:hidden group hover:scale-y-97 duration-300"
           >
             Join the team
-            <img src="/images/icons/arrow-right.png" className="group-hover:rotate-[315deg] duration-300" alt="" />
+            <img
+              src="/images/icons/arrow-right.png"
+              className="group-hover:rotate-[315deg] duration-300"
+              alt=""
+            />
           </a>
 
           <div className="max-md:hidden">
@@ -143,6 +147,18 @@ export default function Footer() {
               className="font-suse text-text-lightSub text-xl underline decoration-text-lightSub flex justify-between items-center w-36 group"
             >
               Instagram
+              <img
+                src="/images/icons/arrow-up-right-grey.png"
+                alt=""
+                className="h-6 group-hover:rotate-45 duration-200"
+              />
+            </a>
+            <a
+              href="https://uwrl.notion.site/"
+              target="_blank"
+              className="font-suse text-text-lightSub text-xl underline decoration-text-lightSub flex justify-between items-center w-36 group"
+            >
+              Notion
               <img
                 src="/images/icons/arrow-up-right-grey.png"
                 alt=""
