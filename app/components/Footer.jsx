@@ -6,7 +6,7 @@ export const metadata = {
 export default function Footer() {
   return (
     <footer
-      className=" w-full h-830 bg-cover bg-no-repeat bg-bottom bg-[url('/images/assets/city-footer.png')] bg-bck-grey flex || max-[1700px]:justify-center">
+      className=" w-full h-830 bg-cover bg-no-repeat bg-bottom bg-[url('/images/assets/city-footer.webp')] bg-bck-grey flex || max-[1700px]:justify-center">
       <div
         className="flex gap-32 mt-48 ml-48 
       ---1536px---

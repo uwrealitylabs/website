@@ -1,7 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Head from "next/head";
-// Font files can be colocated inside of `pages`
 const suse = localFont({
   src: [
     {
