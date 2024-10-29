@@ -1,9 +1,35 @@
+'use client'
+import React from "react";
 import NavBar from "@/app/components/NavBar";
 import Footer from "@/app/components/Footer";
 import ButtonDark from "@/app/components/ButtonDark";
 import Image from "next/image";
 
 export default function Contact() {
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "1d5590de-5fef-4f4a-b496-40dbad549e24");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
   return (
     <div className="bg-bck-white bg-[url('/images/assets/grid.png')]">
       <NavBar />
@@ -27,7 +53,10 @@ export default function Contact() {
             {/* SOCIAL LINKS */}
             <div className="grid grid-flow-row text-bodyLarge font-suse underline gap-y-2">
               <a
-                href="https://discord.gg/vs9XdfuMJu" target="_blank" className="flex items-center gap-4">
+                href="https://discord.gg/vs9XdfuMJu"
+                target="_blank"
+                className="flex items-center gap-4"
+              >
                 <Image
                   src="/images/icons/discord.png"
                   alt=" "
@@ -37,7 +66,11 @@ export default function Contact() {
                 />
                 Discord
               </a>
-              <a href="https://github.com/uwrealitylabs" target="_blank" className="flex items-center gap-4">
+              <a
+                href="https://github.com/uwrealitylabs"
+                target="_blank"
+                className="flex items-center gap-4"
+              >
                 <Image
                   src="/images/icons/github.png"
                   alt=" "
@@ -47,7 +80,11 @@ export default function Contact() {
                 />
                 Github
               </a>
-              <a href="https://www.linkedin.com/company/uwrealitylabs/" target="_blank" className="flex items-center gap-4">
+              <a
+                href="https://www.linkedin.com/company/uwrealitylabs/"
+                target="_blank"
+                className="flex items-center gap-4"
+              >
                 <Image
                   src="/images/icons/linkedin.png"
                   alt=" "
@@ -57,7 +94,11 @@ export default function Contact() {
                 />
                 LinkedIn
               </a>
-              <a href="https://www.instagram.com/uwrealitylabs/" target="_blank" className="flex items-center gap-4">
+              <a
+                href="https://www.instagram.com/uwrealitylabs/"
+                target="_blank"
+                className="flex items-center gap-4"
+              >
                 <Image
                   src="/images/icons/instagram.png"
                   alt=" "
@@ -71,7 +112,7 @@ export default function Contact() {
           </div>
 
           {/* FORM */}
-          <form className="border-dashed border-2 border-accents-blue grid grid-flow-row gap-y-8 p-6">
+          <form onSubmit={onSubmit} className="border-dashed border-2 border-accents-blue grid grid-flow-row gap-y-8 p-6">
             <div className="flex flex-col gap-4">
               <p className="font-suse font-bold font-bodyLarge">Full Name</p>
               <input
@@ -107,7 +148,9 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="border border-dashed border-2 font-suse border-bck-grey font-bold w-fit h-fit px-16 py-2 rounded-lg ml-auto"
+              className="border border-dashed border-2 font-suse border-bck-grey font-bold w-fit h-fit px-16 py-2 rounded-lg ml-auto
+              hover:bg-bck-grey hover:text-text-lightBody duration-300 
+              "
             >
               Send
             </button>
