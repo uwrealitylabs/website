@@ -121,6 +121,7 @@ export default function Contact() {
                 name="name"
                 maxLength="50"
                 placeholder="John Doe"
+                required
               />
             </div>
 
@@ -132,6 +133,7 @@ export default function Contact() {
                 maxLength="50"
                 name="email"
                 placeholder="johndoe@gmail.com"
+                required
               />
             </div>
 
@@ -143,6 +145,7 @@ export default function Contact() {
                 maxLength="250"
                 name="message"
                 placeholder="Hey There!"
+                required
               />
             </div>
 
