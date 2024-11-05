@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from '@next/third-parties/google'
 import localFont from "next/font/local";
 import "./globals.css";
 import Head from "next/head";
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico"/>
       </Head>
       <body>{children}</body>
+      <GoogleAnalytics gaId="G-PZR0R6M6KD" />
     </html>
   );
 }
