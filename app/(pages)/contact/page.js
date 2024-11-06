@@ -113,6 +113,7 @@ export default function Contact() {
 
           {/* FORM */}
           <form onSubmit={onSubmit} className="border-dashed border-2 border-accents-blue grid grid-flow-row gap-y-8 p-6">
+          <input type="checkbox" name="botcheck" className="hidden"/>
             <div className="flex flex-col gap-4">
               <p className="font-suse font-bold font-bodyLarge">Full Name</p>
               <input
