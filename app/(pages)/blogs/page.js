@@ -36,27 +36,15 @@ export default function Blogs() {
         </header>
         {/* BLOG POSTS */}
         <section className="grid grid-cols-3 gap-6 max-md:grid-cols-2 mb-24">
-          <BlogCard
+          <p>Stay tuned for future posts!</p>
+          {/* <BlogCard
             title="Our First Kickoff Meeting!"
             descrip="The modular, open-source VR headset for research and experimentation."
             img={RFS}
             link="firstkickoff"
             date="23/6/24"
-          />
-          {/* <BlogCard
-              title="Reality From Scratch"
-              descrip="The modular, open-source VR headset for research and experimentation."
-              img={RFS}
-              link="/"
-              date="23/6/24"
-            />
-            <BlogCard
-              title="Reality From Scratch"
-              descrip="The modular, open-source VR headset for research and experimentation."
-              img={RFS}
-              link="/"
-              date="23/6/24"
-            /> */}
+          /> */}
+       
         </section>
       </main>
       <Footer />
