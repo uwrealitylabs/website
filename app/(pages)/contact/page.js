@@ -5,7 +5,13 @@ import Footer from "@/app/components/Footer";
 import ButtonDark from "@/app/components/ButtonDark";
 import Image from "next/image";
 
+
+
+
+
 export default function Contact() {
+
+
   const [result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {
