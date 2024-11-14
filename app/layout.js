@@ -29,7 +29,7 @@ const neraphic = localFont({
 
 export const metadata = {
   title: "Waterloo Reality Labs",
-  description: "",
+  description: "The University of Waterloo's XR and spatial computing design team.",
 };
 
 export default function RootLayout({ children }) {
