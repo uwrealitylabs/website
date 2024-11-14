@@ -242,9 +242,10 @@ export default function App() {
                 </p>
               </>
               <ButtonDark
-                text="About us"
+                text="Docs"
                 icon="/images/icons/arrow-right-white.png"
-                link="/about"
+                link="https://uwrl.notion.site/"
+                target="yes"
               />
             </div>
           </div>
