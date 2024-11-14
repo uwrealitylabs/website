@@ -38,8 +38,8 @@ export default function NavBar() {
           <div className="text-white grid text-center gap-9 font-neraphic text-button">
             <a href="/projects">Projects</a>
             <a href="/blogs">Blog</a>
-            <a href="/about">About</a>
             <a href="/contact">Contact</a>
+            <a href="https://uwrl.notion.site/" target="_blank">Docs <img className="h-fit" src="/images/icons/arrow-up-right-dark.png"/></a>
             <ButtonSecondary
               text="Join the Team"
               link="https://discord.gg/vs9XdfuMJu"
@@ -62,8 +62,8 @@ export default function NavBar() {
       >
         <a href="/projects">Projects</a>
         <a href="/blogs">Blog</a>
-        <a href="/about">About</a>
         <a href="/contact">Contact</a>
+        <a href="https://uwrl.notion.site/" className="flex gap-2 w-full justify-center items-center group" target="_blank">Docs <img className="w-6 group-hover:rotate-[405deg] duration-300" src="/images/icons/arrow-up-right-dark.png"/></a>
         <ButtonDark
           text="Join the Team"
           link="https://discord.gg/vs9XdfuMJu"
