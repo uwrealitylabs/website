@@ -50,6 +50,7 @@ export default function ProjDescrip({
             target="yes"
             bg="bck-white"
             border="bck-grey"
+            rotate="360deg"
           />
         ) : (
           ""

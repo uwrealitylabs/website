@@ -24,6 +24,7 @@ export default function RealityFromScratch() {
         <ImageHeader
           title="Reality From Scratch"
           img={RFS}
+          notion={"https://uwrl.notion.site/Reality-From-Scratch-Rev-1-111bc072402f8065bb76e64282b62d98"}
           />
           </div>
 

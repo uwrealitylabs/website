@@ -19,7 +19,7 @@ export default function VITracker() {
       <main className="px-24 py-6 grid gap-y-16 || max-lg:px-12  || max-mobile:px-4">
         <div>
           <BackButton />
-          <ImageHeader title="VITracker" img={HorizontalRender} />
+          <ImageHeader title="VITracker" img={HorizontalRender} notion={"https://uwrl.notion.site/VITracker-342202a3e1f64faaa4811aaedcf2bff2"} />
         </div>
 
         <ProjDescrip
