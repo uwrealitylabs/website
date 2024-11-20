@@ -16,7 +16,8 @@ export default function ButtonSecondary({
   target = "no",
   border = "",
   bg,
-  className = ""
+  className = "",
+  rotate = "315deg"
 }) {
   const img = icon;
   return (
@@ -31,17 +32,9 @@ export default function ButtonSecondary({
       hover:scale-x-97 duration-300  ease-out
       max-md:text-body group
       `}
-      // onMouseOver={(e) => {
-      //   const img = e.currentTarget.querySelector("img");
-      //   if (img && animateIcon) img.src = animateIcon;
-      // }}
-      // onMouseOut={(e) => {
-      //   const img = e.currentTarget.querySelector("img");
-      //   if (img && icon) img.src = icon;
-      // }}
     >
       {text}
-      {icon && <img src={img} alt="" className="w-4 mb-1 group-hover:rotate-[315deg] duration-300" />}
+      {icon && <img src={img} alt="" className= {`w-4 mb-1 group-hover:rotate-[${rotate}] duration-300`} />}
     </a>
   );
 }
