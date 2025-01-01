@@ -11,13 +11,13 @@ export default function ImageHeader({ img, title, notion }) {
           <h1 className="font-neraphic text-h2 || max-mobile:text-h4">
             {title}
           </h1>
-    
+
           {notion ? <a
             href={notion}
             target="_blank"
             className="my-auto group flex flex-row items-end gap-2 font-suse text-text-darkBody text-bodyLarge ml-auto underline font-bold hover:cursor-pointer"
           >
-            <Image src={Notion} className="h-8 w-auto"/>
+            <Image src={Notion} alt="" className="h-8 w-auto" />
             Project Doc{" "}
             <img
               src="/images/icons/arrow-up-right-dark.png"

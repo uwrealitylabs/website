@@ -6,6 +6,7 @@ import BlogCard from "./BlogCard";
 import Image from "next/image";
 import Shapes from "@/public/images/assets/shapes.png";
 import RFS from "@/public/images/photos/realityfromscratch/reality-from-scratch.png";
+import UG from "@/public/images/photos/universalgestures/universalgesturesblogthumbnail.png";
 
 export default function Blogs() {
   return (
@@ -36,15 +37,21 @@ export default function Blogs() {
         </header>
         {/* BLOG POSTS */}
         <section className="grid grid-cols-3 gap-6 max-md:grid-cols-2 mb-24">
-          <p>Stay tuned for future posts!</p>
-          {/* <BlogCard
+          {/* <p>Stay tuned for future posts!</p> */}
+          <BlogCard
             title="Our First Kickoff Meeting!"
             descrip="The modular, open-source VR headset for research and experimentation."
             img={RFS}
             link="firstkickoff"
             date="23/6/24"
-          /> */}
-       
+          />
+          <BlogCard
+            title="Introducing Universal Gestures"
+            descrip="Waterloo Reality Labs has developed 5 on-device machine learning models that can recognize complex hand shapes from a first-person perspective."
+            img={UG}
+            link="universalgestures"
+            date="01/1/25"
+          />
         </section>
       </main>
       <Footer />
