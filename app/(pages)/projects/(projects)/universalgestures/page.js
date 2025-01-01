@@ -58,7 +58,8 @@ export default function UniversalGestures() {
               them—they can immediately get to work on their creative project.
             </p>,
           ]}
-          link="https://github.com/uwrealitylabs/universal-gestures-unity"
+          link="/blogs/universalgestures"
+          linktype="Tech Blog"
         />
         <section className="">
           <Image

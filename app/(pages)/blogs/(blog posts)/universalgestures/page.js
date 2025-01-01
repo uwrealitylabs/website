@@ -4,6 +4,7 @@ import BackButton from "@/app/components/BackButton";
 import Image from "next/image";
 import ImageHeader from "@/app/components/ImageHeading";
 import BlogDescrip from "../../BlogDescrip";
+import Figure from "../../Figure";
 
 import UG from "@/public/images/photos/universalgestures/universalgesturesblogthumbnail.png";
 import UGArch1 from "@/public/images/photos/universalgestures/ugArch1.png";
@@ -133,12 +134,7 @@ export default function UniversalGestures() {
                 </p>
 
                 <br key="16" />
-                <a href={UGArch1.src} target="_blank" rel="noopener noreferrer">
-                  <Image src={UGArch1} alt="A diagram depicting how data flows from the external cameras on your Quest device through our training pipeline. Click to expand." />
-                </a>
-                <p className="text-center italic mt-2 mb-6">
-                  Fig. 1: A diagram depicting how data flows from the external cameras on your Quest device through our training pipeline. Click to expand.
-                </p>
+                <Figure img={UGArch1} descrip="A diagram depicting how data flows from the external cameras on your Quest device through our training pipeline. Click to expand." number="1" />
 
                 <br key="17" />
                 <p>
@@ -189,12 +185,7 @@ export default function UniversalGestures() {
                 </p>
 
                 <br key="26" />
-                <a href={UGArch2.src} target="_blank" rel="noopener noreferrer">
-                  <Image src={UGArch2} alt="A diagram depicting how inference is run on models once they are trained. Click to expand." />
-                </a>
-                <p className="text-center italic mt-2 mb-6">
-                  Fig. 2: A diagram depicting how inference is run on models once they are trained. Click to expand.
-                </p>
+                <Figure img={UGArch2} descrip="A diagram depicting how inference is run on models once they are trained. Click to expand." number="2" />
 
                 <br key="27" />
                 <p>
@@ -236,12 +227,7 @@ export default function UniversalGestures() {
                 </p>
 
                 <br key="33" />
-                <a href={UGNN.src} target="_blank" rel="noopener noreferrer">
-                  <Image src={UGNN} alt="Visualization of single-hand classification model upon initialization, showing neuron structure and fully-connected layers." />
-                </a>
-                <p className="text-center italic mt-2 mb-6">
-                  Fig. 3: Visualization of single-hand classification model upon initialization, showing neuron structure and fully-connected layers.
-                </p>
+                <Figure img={UGNN} descrip="Visualization of single-hand classification model upon initialization, showing neuron structure and fully-connected layers." number="3" />
 
                 <br key="34" />
                 <h3 className="text-xl font-bold my-4">Two-Handed Static</h3>
@@ -356,12 +342,7 @@ export default function UniversalGestures() {
                 </ul>
 
                 <br key="48" />
-                <a href={SiameseNetwork.src} target="_blank" rel="noopener noreferrer" className="flex justify-center items-center">
-                  <Image src={SiameseNetwork} alt="Diagram depicting a twin-network setup of a Siamese neural network. Two identical networks with shared weights perform forward passes on two different inputs. Often one of these forward passes is precomputed. Once we have two output vectors, we can compare them to see if they are similar enough to be a part of the same class, or if the second output is in a different class." />
-                </a>
-                <p className="text-center italic mt-2 mb-6">
-                  Fig. 4: Diagram depicting a twin-network setup of a Siamese neural network. Two identical networks with shared weights perform forward passes on two different inputs. Often one of these forward passes is precomputed. Once we have two output vectors, we can compare them to see if they are similar enough to be a part of the same class, or if the second output is in a different class.
-                </p>
+                <Figure img={SiameseNetwork} descrip="Diagram depicting a twin-network setup of a Siamese neural network. Two identical networks with shared weights perform forward passes on two different inputs. Often one of these forward passes is precomputed. Once we have two output vectors, we can compare them to see if they are similar enough to be a part of the same class, or if the second output is in a different class." number="4" />
 
                 <br key="49" />
                 <p>
