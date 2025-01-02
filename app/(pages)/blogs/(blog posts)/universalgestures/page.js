@@ -16,14 +16,14 @@ export default function UniversalGestures() {
   return (
     <div className="bg-[url('/images/assets/grid.png')]">
       <NavBar />
-      <main className="px-24 py-6|| max-md:px-8 || max-mobile:px-4">
+      <main className="px-4 sm:px-8 md:px-24 py-6">
         <BackButton />
-        <div className="max-w-1360 mx-auto grid md:gap-y-12">
+        <div className="max-w-[1360px] mx-auto grid gap-y-8 md:gap-y-12">
           <ImageHeader title="Introducing Universal Gestures" img={UG} />
           <BlogDescrip
             title="Waterloo Reality Labs has developed 5 on-device machine learning models that can recognize complex hand shapes from a first-person perspective."
             body={[
-              <div key="1">
+              <div key="1" className="max-w-full overflow-x-hidden">
                 <p>
                   <em>
                     Releasing today to Unity developers in preview, Universal Gestures raises the bar for ease-of-use and accessibility when implementing gesture recognition in VR.
@@ -365,7 +365,17 @@ export default function UniversalGestures() {
                 </p>
 
                 <br key="51" />
-                <iframe width="700" height="394" src="https://www.youtube.com/embed/daMcOk1g8BM?si=LazRciZzcq2wJr5s" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                <div className="relative w-full aspect-video my-8">
+                  <iframe 
+                    className="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/daMcOk1g8BM?si=LazRciZzcq2wJr5s" 
+                    title="YouTube video player" 
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    allowFullScreen
+                  />
+                </div>
 
                 <br key="52" />
                 <h2 className="text-2xl font-bold my-4">Future Goals</h2>
@@ -412,7 +422,9 @@ export default function UniversalGestures() {
             description="Authored by Justin Lin, Brian Zhang, Varun Parikh, Sandra Huang, Lily Ni, Brandon Ling, Nathanael Richard Ha Hanes, and Charlotte Ma of Waterloo Reality Labs"
           />
         </div>
-        <a href="/blogs" className="my-16 button-styling font-neraphic border-dashed border-bck-grey border-2 mx-auto">View More Blogs</a>
+        <a href="/blogs" className="my-16 button-styling font-neraphic border-dashed border-bck-grey border-2 mx-auto block w-fit">
+          View More Blogs
+        </a>
       </main>
       <Footer />
     </div>
