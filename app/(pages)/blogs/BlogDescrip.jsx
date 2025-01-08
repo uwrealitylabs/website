@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PropTypes from 'prop-types';
 import Divider from "@/public/images/assets/blog-date-divider.png";
 
 export default function BlogDescrip({ title, body, date, description }) {
@@ -29,3 +30,10 @@ export default function BlogDescrip({ title, body, date, description }) {
     </section>
   );
 }
+
+BlogDescrip.propTypes = {
+  title: PropTypes.string.isRequired,
+  body: PropTypes.node.isRequired,
+  date: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
+};
