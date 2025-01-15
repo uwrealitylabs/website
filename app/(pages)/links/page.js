@@ -31,10 +31,10 @@ export default function Linktree() {
 
         {/* SOCIAL LINKS */}
         <section className="grid grid-cols-2 text-bodyLarge font-suse gap-2 justify-center items-center mx-auto">
-          <a href="https://discord.gg/vs9XdfuMJu" className="flex items-center gap-4">
+          <a href="https://discord.gg/vs9XdfuMJu" className="flex items-center gap-4 mrx-auto">
             <Image
               src="/images/icons/discord.png"
-              width={22}
+              width={23}
               height={17}
               className="object-contain"
               alt=""
