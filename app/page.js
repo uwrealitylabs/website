@@ -38,7 +38,7 @@ export default function App() {
         <div
           className="
         hero-main 
-        bg-[url('/images/assets/iso-grid-hero.png'),_url('/images/assets/city.webp')] bg-bck-white bg-no-repeat bg-bottom
+        bg-[url('/images/assets/iso-grid-hero.webp'),_url('/images/assets/city.webp')] bg-bck-white bg-no-repeat bg-bottom
         relative 
         flex justify-center items-center flex-col gap-7
         border-solid border-bck-grey border-1 rounded-2xl
