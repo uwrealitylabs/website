@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PropTypes from 'prop-types';
 
 export default function Figure({ img, descrip, number }) {
     return (
@@ -12,3 +13,9 @@ export default function Figure({ img, descrip, number }) {
         </div>
     );
 }
+
+Figure.propTypes = {
+    img: PropTypes.object.isRequired,
+    descrip: PropTypes.string.isRequired,
+    number: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
+};

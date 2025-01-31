@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PropTypes from 'prop-types';
 
 export default function BlogCard({ title, descrip, img, link, date }) {
   return (
@@ -15,7 +16,7 @@ export default function BlogCard({ title, descrip, img, link, date }) {
             src={img}
             className="w-full h-full object-cover"
             loading="eager"
-            alt=" "
+            alt={title}
           />
         </div>
         <header>
@@ -35,3 +36,15 @@ export default function BlogCard({ title, descrip, img, link, date }) {
     </a>
   );
 }
+
+BlogCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  descrip: PropTypes.string.isRequired,
+  img: PropTypes.object.isRequired,
+  link: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired
+};
+
+// added proptypes to blogcard, blogdescrip, figure, member
+// catches prop bugs. 
+// plus we don't need typescript changes
