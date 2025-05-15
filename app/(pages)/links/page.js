@@ -21,7 +21,7 @@ export default function Linktree() {
             href="https://forms.gle/X9uLTh6qCSu9p8Ra6"
             className="font-neraphic text-button bg-bck-white border border-solid border-1 border-bck-grey rounded-md p-4 "
           >
-            Join the Team here for Summer 2025!
+            Join the team here for summer 2025!
           </a>
           <a
           target="_blank"
