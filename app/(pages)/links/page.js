@@ -16,6 +16,13 @@ export default function Linktree() {
         </p>
 
         <section className="grid gap-y-2 w-640">
+        <a
+          target="_blank"
+            href="https://forms.gle/X9uLTh6qCSu9p8Ra6"
+            className="font-neraphic text-button bg-bck-white border border-solid border-1 border-bck-grey rounded-md p-4 "
+          >
+            Join the Team here for Summer 2025!
+          </a>
           <a
           target="_blank"
             href="https://uwrl.notion.site/ad61b3a584a14659a3a56e723da43f23?v=5180ad28466e4c8f928847bb57235581"
