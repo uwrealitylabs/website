@@ -14,6 +14,7 @@ import NorthStar from "@/public/images/photos/northstar/northstar-headset.png";
 import UniversalGestures from "@/public/images/photos/universalgestures/socratica.jpeg";
 import UniversalText from "@/public/images/photos/universaltext/UTDemo.png";
 import Anima from "@/public/images/photos/anima/anima.png";
+import Humanoid from "@/public/images/photos/humanoid/humanoid.png";
 import LogoAnimation from "@/public/images/assets/uwrl-logo-animation.gif";
 import NotionLogo from "@/public/images/assets/notion-logo.webp";
 import WeefLogo from "@/public/images/assets/weef_logo.webp";
@@ -118,6 +119,16 @@ export default function App() {
             ]}
             link="/projects/realityfromscratch"
             image={RFSHeadset}
+          />
+          <Card
+            heading="Humanoid"
+            body={[
+              "Ambitious project to assemble a ",
+              <b key="humanoid">humanoid bot with high dexterity</b>,
+              ", that can be tele-operable via VR and autonomous via sensors.",
+            ]}
+            link="/projects/humanoid"
+            image={Humanoid}
           />
           <Card
             heading="VITracker"

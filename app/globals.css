@@ -14,6 +14,8 @@ html, body {
   width: 100%;
   overflow-x: hidden;
   background-color: #FFFCF3;
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: auto;
 }
 
 .button-styling {

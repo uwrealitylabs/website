@@ -7,6 +7,11 @@ import BackButton from "@/app/components/BackButton";
 import ContentImages from "../../ContentImages";
 
 import HumanoidRobot from "@/public/images/photos/humanoid/humanoid.png";
+import HandOpen from "@/public/images/photos/humanoid/hand-open.png";
+import HandPeace from "@/public/images/photos/humanoid/hand-peace.png";
+import HandProgress from "@/public/images/photos/humanoid/hand-progress.jpg";
+import Tendon1 from "@/public/images/photos/humanoid/tendon1.jpg";
+import Tendon2 from "@/public/images/photos/humanoid/tendon2.jpg";
 
 export default function Humanoid() {
   return (
@@ -19,7 +24,7 @@ export default function Humanoid() {
         </div>
 
         <ProjDescrip
-          projecttype="VR Hardware + Software"
+          projecttype="Mechanical + Electrical + Firmware + VR Software"
           details="Building the best remote piloting system for humanoid robotics using VR headsets and hand tracking."
           heading="Complete immersion and precise control of digits and arms"
           description={[
@@ -55,7 +60,27 @@ export default function Humanoid() {
           // link="https://github.com/uwrealitylabs/humanoid"
         />
 
-        <section className="text-bodyLarge font-suse leading-normal md:w-1/2 max-mobile:text-body">
+        <section className="text-bodyLarge font-suse leading-normal max-mobile:text-body">
+          <h2 className="text-h2 font-neraphic leading-snug max-md:text-h3 max-mobile:text-h4">
+            Robotic Hand Development
+          </h2>
+          <br/>
+          <p>
+            Our robotic hand features articulated fingers with tendon-driven actuation 
+            systems, allowing for precise control and natural movement patterns. Each 
+            finger is equipped with multiple degrees of freedom, enabling complex grasping 
+            and manipulation tasks.
+          </p>
+          <br/>
+          <p>
+            The hand can achieve various poses from fully open configurations to precise 
+            pinch grips and gesture recognition. The tendon system provides the mechanical 
+            advantage needed for strong grips while maintaining the flexibility for 
+            delicate operations, making it ideal for telepresence applications.
+          </p>
+        </section>
+
+        <section className="text-bodyLarge font-suse leading-normal max-mobile:text-body">
           <h2 className="text-h2 font-neraphic leading-snug max-md:text-h3 max-mobile:text-h4">
             Vision & Implementation
           </h2>
@@ -73,6 +98,14 @@ export default function Humanoid() {
             and immersive software development to push the boundaries of what's 
             possible in human-robot interaction.
           </p>
+        </section>
+
+        <section className="mobile:grid mobile:grid-cols-2 mx-auto max-mobile:flex max-mobile:flex-col gap-6 my-16">
+          <ContentImages photo={HandOpen} aspect="square" />
+          <ContentImages photo={HandPeace} aspect="square" />
+          <ContentImages photo={HandProgress} grid="full" />
+          <ContentImages photo={Tendon1} />
+          <ContentImages photo={Tendon2} />
         </section>
 
         <JoinUs/>
