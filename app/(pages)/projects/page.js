@@ -18,6 +18,7 @@ import VITracker from "@/public/images/photos/vitracker/vitracker_v0_s5.png"
 import HorizontalRender from "@/public/images/photos/vitracker/vitracker_v0_s3.png";
 
 import Anima from "@/public/images/photos/anima/anima.png"
+import Humanoid from "@/public/images/photos/humanoid/humanoid.png"
 
 export default function Projects() {
   return (
@@ -57,6 +58,16 @@ export default function Projects() {
 
         "
           >
+            <ProjectCard
+              title="Humanoid"
+              descrip={[
+                "Ambitious project to assemble a ",
+                <b key="humanoid">humanoid bot with high dexterity</b>,
+                ", that can be tele-operable via VR and autonomous via sensors.",
+              ]}
+              img={Humanoid}
+              link="humanoid"
+            />
             <ProjectCard
               title="Reality From Scratch"
               descrip={[
