@@ -29,32 +29,36 @@ export default function Humanoid() {
           heading="Complete immersion and precise control of digits and arms"
           description={[
             <p key="1">
-              We're building the next generation of humanoid robotics interactions! 
-              Our ambitious goal is to implement fine control over a robotic hand and arm 
-              from a VR headset wirelessly, with complete immersion through cameras and 
-              head movement tracking.
+              We're building the next generation of humanoid robotics
+              interactions! Our ambitious goal is to implement fine control over
+              a robotic hand and arm from a VR headset wirelessly, with complete
+              immersion through cameras and head movement tracking.
             </p>,
 
             <p key="2">
-              <b>Mechanical Design:</b> Designing the fingers, forearm, arm, and stand with 
-              high dexterity capabilities for precise manipulation tasks.
+              <b>Mechanical Design:</b> Designing the fingers, forearm, arm, and
+              stand with high dexterity capabilities for precise manipulation
+              tasks.
               <br />
-              <b>Electrical Design:</b> Developing custom PCBs, power systems, and signal 
-              processing for seamless communication between components.
+              <b>Electrical Design:</b> Developing custom PCBs, power systems,
+              and signal processing for seamless communication between
+              components.
               <br />
-              <b>Firmware:</b> Writing custom firmware for the PCBs, motors, and sensors 
-              to enable real-time control and feedback.
+              <b>Firmware:</b> Writing custom firmware for the PCBs, motors, and
+              sensors to enable real-time control and feedback.
               <br />
-              <b>VR Software:</b> Gathering hand data using the Meta SDK and transmitting 
-              commands to the robot via WebSocket for instantaneous response.
+              <b>VR Software:</b> Gathering hand data using the Meta SDK and
+              transmitting commands to the robot via WebSocket for instantaneous
+              response.
             </p>,
 
             <p key="3">
-              The use cases are endless: human remote control of robots for dangerous 
-              situations, interactions with heavy equipment, physically difficult tasks, 
-              and enhanced mobility for people with physical disabilities. We're creating 
-              a tele-operable humanoid bot that bridges the gap between human intention 
-              and robotic execution.
+              The use cases are endless: human remote control of robots for
+              dangerous situations, interactions with heavy equipment,
+              physically difficult tasks, and enhanced mobility for people with
+              physical disabilities. We're creating a tele-operable humanoid bot
+              that bridges the gap between human intention and robotic
+              execution.
             </p>,
           ]}
           // link="https://github.com/uwrealitylabs/humanoid"
@@ -64,19 +68,20 @@ export default function Humanoid() {
           <h2 className="text-h2 font-neraphic leading-snug max-md:text-h3 max-mobile:text-h4">
             Robotic Hand Development
           </h2>
-          <br/>
+          <br />
           <p>
-            Our robotic hand features articulated fingers with tendon-driven actuation 
-            systems, allowing for precise control and natural movement patterns. Each 
-            finger is equipped with multiple degrees of freedom, enabling complex grasping 
-            and manipulation tasks.
+            Our robotic hand features articulated fingers with tendon-driven
+            actuation systems, allowing for precise control and natural movement
+            patterns. Each finger is equipped with multiple degrees of freedom,
+            enabling complex grasping and manipulation tasks.
           </p>
-          <br/>
+          <br />
           <p>
-            The hand can achieve various poses from fully open configurations to precise 
-            pinch grips and gesture recognition. The tendon system provides the mechanical 
-            advantage needed for strong grips while maintaining the flexibility for 
-            delicate operations, making it ideal for telepresence applications.
+            The hand can achieve various poses from fully open configurations to
+            precise pinch grips and gesture recognition. The tendon system
+            provides the mechanical advantage needed for strong grips while
+            maintaining the flexibility for delicate operations, making it ideal
+            for telepresence applications.
           </p>
         </section>
 
@@ -84,19 +89,15 @@ export default function Humanoid() {
           <h2 className="text-h2 font-neraphic leading-snug max-md:text-h3 max-mobile:text-h4">
             Vision & Implementation
           </h2>
-          <br/>
+          <br />
           <p>
-            Our system integrates cutting-edge VR technology with advanced robotics 
-            to create an unprecedented level of telepresence. Users can see through 
-            the robot's cameras while their head movements control the robot's head, 
-            and their hand gestures are translated into precise robotic movements.
-          </p>
-          <br/>
-          <p>
-            The project represents a fusion of multiple engineering disciplines, 
-            combining mechanical precision, electrical innovation, firmware expertise, 
-            and immersive software development to push the boundaries of what's 
-            possible in human-robot interaction.
+            This project combines VR technology with robotics to create a real
+            life avatar, in the form of a humanoid robot. The applications are
+            endless. These robots can be deployed in dangerous scenarios, such
+            as war zones, to perform tasks without risking human lives. We are
+            starting of with the goal of playing the violin with the robot
+            through tele-operation. Eventually, we aim to incorporate autonomy
+            into the humanoid, similar to Tesla's Optimus project.
           </p>
         </section>
 
@@ -108,9 +109,9 @@ export default function Humanoid() {
           <ContentImages photo={Tendon2} />
         </section>
 
-        <JoinUs/>
+        <JoinUs />
       </main>
       <Footer />
     </div>
   );
-} 
+}
