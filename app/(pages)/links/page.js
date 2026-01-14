@@ -18,10 +18,10 @@ export default function Linktree() {
         <section className="grid gap-y-2 w-640">
         <a
           target="_blank"
-            href="https://forms.gle/2vjrPrTJR8FbdpRcA"
+            href="https://forms.gle/uzMxTfxZyYQNoGEMA"
             className="font-neraphic text-button bg-bck-white border border-solid border-1 border-bck-grey rounded-md p-4 "
           >
-            Join the team here for Fall 2025!
+            Join the team here for 2026!
           </a>
           <a
           target="_blank"
