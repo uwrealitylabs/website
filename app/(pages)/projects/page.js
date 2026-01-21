@@ -10,7 +10,7 @@ import JoinUs from "@/app/components/JoinUs";
 import Image from "next/image";
 
 import Shapes from "@/public/images/assets/shapes.png"
-import RealityFromScratch from "@/public/images/photos/realityfromscratch/reality-from-scratch.png"
+import ProjectStandalone from "@/public/images/photos/project-standalone/project-standalone-hero.png"
 import ProjectNorthStar from "@/public/images/photos/northstar/northstar.png"
 import UniversalGestures from "@/public/images/photos/universalgestures/socratica-uni-gestures.png"
 import UniversalText from "@/public/images/photos/universaltext/UTDemo.png"
@@ -69,16 +69,16 @@ export default function Projects() {
               link="humanoid"
             />
             <ProjectCard
-              title="Reality From Scratch"
+              title="Project Standalone"
               descrip={[
-                "By using an IMU connected to an Arduino Pro Micro, we achieved ",
-                <b key="rotational">rotational (3DoF) tracking.</b>,
-                " The IMU motion vector data is translated into SteamVR readable input through drivers forked from the OpenVR SDK.",
+                "TBD ",
+                <b key="standalone">TBD</b>,
+                " TBD.",
               ]}
-              img={RealityFromScratch}
-              link="realityfromscratch"
+              img={ProjectStandalone}
+              link="project-standalone"
             />
-            <ProjectCard
+            {/* <ProjectCard
               title="Project Northstar"
               descrip={[
                 "A fully self-contained ",
@@ -87,7 +87,7 @@ export default function Projects() {
               ]}
               img={ProjectNorthStar}
               link="northstar"
-            />
+            /> */}
             <ProjectCard
               title="Universal Gestures"
               descrip="Using deep learning to understand hand-tracked movements."
@@ -101,20 +101,20 @@ export default function Projects() {
               link="vitracker"
               grid=""
             />
-            <ProjectCard
+            {/* <ProjectCard
               title="Universal Text"
               descrip="Developing a structured software package for Unity that provides a dynamic textual representation of a user's virtual environment and their interactions within it"
               img={UniversalText}
               link="universaltext"
               grid="double"
-            />
-            <ProjectCard
+            /> */}
+            {/* <ProjectCard
               title="Anima"
               descrip="Developing a Unity VR app for Meta Quest that lets users explore full-scale photogrammetry scans of real-world buildings"
               img={Anima}
               link="anima"
               grid="double"
-            />
+            /> */}
           </section>
           <JoinUs />
         </main>

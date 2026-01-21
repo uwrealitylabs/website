@@ -35,7 +35,7 @@ export default function RealityFromScratch() {
           description={[
             <p key="9">
               We are building our very own, fully custom VR headset. We call it
-              Reality from Scratch.
+              Project Standalone.
             </p>,
 
             <p key="10">

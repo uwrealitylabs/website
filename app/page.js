@@ -8,6 +8,7 @@ import Footer from "@/app/components/Footer";
 import Card from "./(pages)/home/card";
 
 import Image from "next/image";
+import ProjectStandalone from "@/public/images/photos/project-standalone/project-standalone-hero.png";
 import RFSHeadset from "@/public/images/photos/realityfromscratch/headset.png";
 import VITracker from "@/public/images/photos/vitracker/teammeeting.png";
 import NorthStar from "@/public/images/photos/northstar/northstar-headset.png";
@@ -110,6 +111,16 @@ export default function App() {
 
         {/* CARDS */}
         <div className="grid grid-cols-3 gap-6 max-w-1360 || max-lg:grid-cols-2 || max-lg:mx-6  || max-sm:grid-cols-1 max-sm:mx-6 || ">
+          <Card
+            heading="Project Standalone"
+            body={[
+              "TBD ",
+              <b key="standalone">TBD</b>,
+              " TBD.",
+            ]}
+            link="/projects/project-standalone"
+            image={ProjectStandalone}
+          />
           <Card
             heading="Reality From Scratch"
             body={[
