@@ -28,14 +28,21 @@ export default function ProjectCard({ title, descrip, img, link, grid = "" }) {
           </p>
         </header>
         <div
-          className={`border-solid border-bck-grey border-2 rounded-lg overflow-hidden max-mobile:aspect-[10/9]
-        ${
-          grid === "double"
-            ? "aspect-4/3 max-md:aspect-3/2"
-            : "aspect-[16/7] max-md:aspect-[13/8]"
-        }`}
+          className="relative border-solid border-bck-grey border-2 rounded-lg overflow-hidden aspect-[20/7] max-md:aspect-[13/8] max-mobile:aspect-[10/9]"
         >
-          <Image src={img} className="w-full h-full object-cover" loading="eager" alt=" "/>
+          <Image
+            src={img}
+            fill
+            className="object-cover"
+            quality={90}
+            sizes={
+              grid === "double"
+                ? "(max-width: 768px) 100vw, 40vw"
+                : "(max-width: 768px) 100vw, 80vw"
+            }
+            loading="eager"
+            alt=" "
+            />
         </div>
       </div>
     </a>
