@@ -12,6 +12,7 @@ import Image from "next/image";
 import Shapes from "@/public/images/assets/shapes.png"
 import ProjectStandalone from "@/public/images/photos/project-standalone/horizonos.png"
 import ProjectNorthStar from "@/public/images/photos/northstar/northstar.png"
+import ProjectNorthStarHeadset from "@/public/images/photos/northstar/northstar-headset.png"
 import UniversalGestures from "@/public/images/photos/universalgestures/socratica-uni-gestures.png"
 import UniversalText from "@/public/images/photos/universaltext/UTDemo.png"
 import VITracker from "@/public/images/photos/vitracker/vitracker_v0_s5.png"
@@ -72,9 +73,10 @@ export default function Projects() {
             <ProjectCard
               title="Project Standalone"
               descrip={[
-                "TBD ",
-                <b key="standalone">TBD</b>,
-                " TBD.",
+                "Build a fully open, ",
+                <b key="standalone">standalone </b>,
+                " XR system with open hardware and software.",
+                "",
               ]}
               img={ProjectStandalone}
               link="project-standalone"
@@ -123,7 +125,7 @@ export default function Projects() {
                   <b key="proj AR">AR device</b>,
                   " using optical combiners and Intel's RealSense T265. Based on Ultraleap's Project North Star.",
                 ]}
-                img={ProjectNorthStar}
+                img={ProjectNorthStarHeadset}
                 link="northstar"
               />
               <ProjectCard

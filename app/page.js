@@ -106,22 +106,21 @@ export default function App() {
         ref={Projects}
       >
         <h2 className="font-neraphic text-h2 py-24 || max-md:text-h3 || max-mobile:pb-16">
-          Our Projects
+          Open Projects
         </h2>
 
         {/* CARDS */}
-        <div className="grid grid-cols-3 gap-6 max-w-1360 || max-lg:grid-cols-2 || max-lg:mx-6  || max-sm:grid-cols-1 max-sm:mx-6 || ">
+        <div className="grid grid-cols-3 gap-6 max-w-1360 || max-lg:grid-cols-2 || max-lg:mx-6  || max-sm:grid-cols-1 max-sm:mx-6 ||">
           <Card
             heading="Project Standalone"
             body={[
-              "TBD ",
-              <b key="standalone">TBD</b>,
-              " TBD.",
+              "Build a fully open, standalone XR system with ",
+              <b key="standalone">open hardware and software.</b>,
             ]}
             link="/projects/project-standalone"
-            image={ProjectStandalone}
+            image={NorthStar}
           />
-          <Card
+          {/* <Card
             heading="Reality From Scratch"
             body={[
               "Our magnum opus: a ",
@@ -130,7 +129,7 @@ export default function App() {
             ]}
             link="/projects/realityfromscratch"
             image={RFSHeadset}
-          />
+          /> */}
           <Card
             heading="Humanoid"
             body={[
@@ -147,7 +146,7 @@ export default function App() {
             link="/projects/vitracker"
             image={VITracker}
           />
-          <Card
+          {/* <Card
             heading="North Star"
             body={[
               "An open-source, birdbath optics-based ",
@@ -156,25 +155,25 @@ export default function App() {
             ]}
             link="/projects/northstar"
             image={NorthStar}
-          />
+          /> */}
           <Card
             heading="Universal Gestures"
             body="Using on-device machine learning to recognize hand gestures on Meta Quest"
             link="/projects/universalgestures"
             image={UniversalGestures}
           />
-          <Card
+          {/* <Card
             heading="Universal Text"
             body="Unity software package for dynamic text representation of a user's virtual environment."
             link="/projects/universaltext"
             image={UniversalText}
-          />
-          <Card
+          /> */}
+          {/* <Card
             heading="Anima"
             body="Unity VR app for exploring life-sized, real-world building scans."
             link="/projects/anima"
             image={Anima}
-          />
+          /> */}
         </div>
 
         <a
