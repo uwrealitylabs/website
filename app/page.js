@@ -8,7 +8,7 @@ import Footer from "@/app/components/Footer";
 import Card from "./(pages)/home/card";
 
 import Image from "next/image";
-import ProjectStandalone from "@/public/images/photos/project-standalone/project-standalone-hero.png";
+import ProjectStandalone from "@/public/images/photos/northstar/northstar.png";
 import RFSHeadset from "@/public/images/photos/realityfromscratch/headset.png";
 import VITracker from "@/public/images/photos/vitracker/teammeeting.png";
 import NorthStar from "@/public/images/photos/northstar/northstar-headset.png";

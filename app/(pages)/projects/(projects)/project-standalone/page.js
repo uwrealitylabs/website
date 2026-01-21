@@ -6,8 +6,7 @@ import ContentImages from "../../ContentImages";
 import JoinUs from "@/app/components/JoinUs";
 import BackButton from "@/app/components/BackButton";
 
-import ProjectStandaloneHero from "@/public/images/photos/project-standalone/project-standalone-hero.png";
-import NorthStar from "@/public/images/photos/northstar/northstar.png";
+import ProjectStandaloneHero from "@/public/images/photos/northstar/northstar.png";
 import FrontView from "@/public/images/photos/northstar/frontview.png";
 import OnHead2 from "@/public/images/photos/northstar/onhead2.png";
 import PCB from "@/public/images/photos/northstar/pcb.png";

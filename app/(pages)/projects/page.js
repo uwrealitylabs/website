@@ -10,7 +10,7 @@ import JoinUs from "@/app/components/JoinUs";
 import Image from "next/image";
 
 import Shapes from "@/public/images/assets/shapes.png"
-import ProjectStandalone from "@/public/images/photos/project-standalone/project-standalone-hero.png"
+import ProjectStandalone from "@/public/images/photos/project-standalone/horizonos.png"
 import ProjectNorthStar from "@/public/images/photos/northstar/northstar.png"
 import UniversalGestures from "@/public/images/photos/universalgestures/socratica-uni-gestures.png"
 import UniversalText from "@/public/images/photos/universaltext/UTDemo.png"
@@ -30,7 +30,7 @@ export default function Projects() {
           <header className="flex justify-between items-end gap-24 mb-12">
             <div className="max-w-640 flex flex-col gap-4">
               <h1 className="font-neraphic text-h2 text-text-darkBody max-md:text-h3">
-                The Project Collective
+                Current Projects
               </h1>
               <p className="font-suse text-bodyLarge leading-normal text-text-darkBody">
                 See how we’ve turned ideas into{" "}
@@ -78,16 +78,6 @@ export default function Projects() {
               img={ProjectStandalone}
               link="project-standalone"
             />
-            {/* <ProjectCard
-              title="Project Northstar"
-              descrip={[
-                "A fully self-contained ",
-                <b key="proj AR">AR device</b>,
-                " using optical combiners and Intel's RealSense T265. Based on Ultraleap's Project North Star.",
-              ]}
-              img={ProjectNorthStar}
-              link="northstar"
-            /> */}
             <ProjectCard
               title="Universal Gestures"
               descrip="Using deep learning to understand hand-tracked movements."
@@ -101,20 +91,55 @@ export default function Projects() {
               link="vitracker"
               grid=""
             />
-            {/* <ProjectCard
-              title="Universal Text"
-              descrip="Developing a structured software package for Unity that provides a dynamic textual representation of a user's virtual environment and their interactions within it"
-              img={UniversalText}
-              link="universaltext"
-              grid="double"
-            /> */}
-            {/* <ProjectCard
-              title="Anima"
-              descrip="Developing a Unity VR app for Meta Quest that lets users explore full-scale photogrammetry scans of real-world buildings"
-              img={Anima}
-              link="anima"
-              grid="double"
-            /> */}
+          </section>
+
+          <section className="mt-20">
+            <header className="flex items-end justify-between gap-8 mb-12">
+              <div className="max-w-640 flex flex-col gap-3">
+                <h2 className="font-neraphic text-h3 text-text-darkBody max-md:text-h4">
+                  Past Projects
+                </h2>
+                <p className="font-suse text-bodyLarge leading-normal text-grey-40">
+                  Highlights from previous research and builds.
+                </p>
+              </div>
+            </header>
+
+            <section
+              className="grid grid-cols-2 gap-x-6 gap-y-16
+        ---786px---
+        max-md:gap-y-12 
+
+        ---520px---
+        max-mobile:gap-y-8
+
+        "
+            >
+              <ProjectCard
+                title="Project Northstar (Hardware portion of Standalone)"
+                descrip={[
+                  "A fully self-contained ",
+                  <b key="proj AR">AR device</b>,
+                  " using optical combiners and Intel's RealSense T265. Based on Ultraleap's Project North Star.",
+                ]}
+                img={ProjectNorthStar}
+                link="northstar"
+              />
+              <ProjectCard
+                title="Universal Text"
+                descrip="Developing a structured software package for Unity that provides a dynamic textual representation of a user's virtual environment and their interactions within it"
+                img={UniversalText}
+                link="universaltext"
+                grid="double"
+              />
+              <ProjectCard
+                title="Anima"
+                descrip="Developing a Unity VR app for Meta Quest that lets users explore full-scale photogrammetry scans of real-world buildings"
+                img={Anima}
+                link="anima"
+                grid="double"
+              />
+            </section>
           </section>
           <JoinUs />
         </main>
