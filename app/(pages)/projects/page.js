@@ -19,6 +19,7 @@ import HorizontalRender from "@/public/images/photos/vitracker/vitracker_v0_s3.p
 
 import Anima from "@/public/images/photos/anima/anima.png"
 import Humanoid from "@/public/images/photos/humanoid/humanoid.png"
+import RealityFromScratchImg from "@/public/images/photos/realityfromscratch/reality-from-scratch.png"
 
 export default function Projects() {
   return (
@@ -138,6 +139,16 @@ export default function Projects() {
                 img={Anima}
                 link="anima"
                 grid="double"
+              />
+              <ProjectCard
+                title="Reality From Scratch"
+                descrip={[
+                  "By using an IMU connected to an Arduino Pro Micro, we achieved ",
+                  <b key="rotational">rotational (3DoF) tracking.</b>,
+                  " The IMU motion vector data is translated into SteamVR readable input through drivers forked from the OpenVR SDK.",
+                ]}
+                img={RealityFromScratchImg}
+                link="realityfromscratch"
               />
             </section>
           </section>
