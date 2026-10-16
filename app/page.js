@@ -1,5 +1,5 @@
 "use client";
-import { useRef } from "react";
+import Link from "next/link";
 
 import "./page.css";
 import ButtonDark from "@/app/components/ButtonDark";
@@ -22,12 +22,6 @@ import WeefLogo from "@/public/images/assets/weef_logo.webp";
 import QuadoaLogo from "@/public/images/assets/quadoa_logo.svg";
 
 export default function App() {
-  const Projects = useRef(null);
-
-  const ScrollToSection = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <div>
       <NavBar />
@@ -81,17 +75,17 @@ export default function App() {
               The University of Waterloo&apos;s XR and spatial computing design
               team.
             </h1>
-            <button
-              onClick={() => ScrollToSection(Projects)}
+            <Link
+              href="/links"
               className="bg-bck-grey text-text-lightBody button-styling font-normal font-neraphic group hover:scale-x-97 duration-300"
             >
-              Dive Deeper
+              Join Us
               <img
                 src="images/icons/arrow-right-white.png"
                 className="w-4 mb-1 group-hover:rotate-[90deg] duration-300"
                 alt=""
               />
-            </button>
+            </Link>
           </div>
         </div>
       </header>
@@ -103,7 +97,6 @@ export default function App() {
       flex flex-col items-center justify-center px-20 || max-lg:px-6 || max-md:rounded-3xl
       "
         id="projects"
-        ref={Projects}
       >
         <h2 className="font-neraphic text-h2 py-24 || max-md:text-h3 || max-mobile:pb-16">
           Open Projects
